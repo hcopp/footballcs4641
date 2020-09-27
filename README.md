@@ -6,8 +6,8 @@ Daniel Mulloy, Steven McGaughey, William Hunnicutt, and Hunter Copp.
 ## Touch-points
 ### Touch-point 1 (September 28)
 
-[Google Slides proposal](https://docs.google.com/presentation/d/1lqc4cYwl3FGDUaEJnqRbJutyHcS9bqcUW0vrNTv1BoU/edit?usp=sharing)
-Pre-recorded video of proposal presentation
+[Google Slides proposal](https://docs.google.com/presentation/d/1lqc4cYwl3FGDUaEJnqRbJutyHcS9bqcUW0vrNTv1BoU/edit?usp=sharing)  
+Pre-recorded video of proposal presentation  
 Presentation is a single slide with our project proposal
 
 ### Touch-point 2 (October 30)
