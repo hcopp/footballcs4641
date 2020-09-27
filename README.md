@@ -26,6 +26,9 @@ Motivation: Being able to model the number of yards that will be gained by a pla
 Goal: To model the number of yards that will be gained in an NFL play based on the situation.  
 ### Methods
 Outline of dataset we are planning on utilizing & techniques we intend to apply
+For our project, we plan on using a [play by play dataset](https://www.kaggle.com/maxhorowitz/nflplaybyplay2009to2016) from recent years.  
+The dataset contains roughly 100 columns of data, with varying importance.  
+We plan on applying ______, _______, and ______ techniques.
 
 ### Results
 Talk about the results we are trying to achieve
