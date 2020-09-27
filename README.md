@@ -38,7 +38,9 @@ Talk about the results we are trying to achieve
 Explain what the best outcome would be, and what the next steps would be  
 The best reasonable outcome would be for us to model 90% of plays successfully, where a successful model is defined as one that we get within 10% of the yards gained or lost.
 ### References
-List containing at least 3 references, preferably peer reviewed  
+List containing at least 3 references, preferably peer reviewed (TURN TO MLA or APA)
+https://towardsdatascience.com/applying-machine-learning-to-predict-byu-football-play-success-60b57267b78c  
+https://dspace.mit.edu/bitstream/handle/1721.1/113120/1016455954-MIT.pdf?sequence=1  
 
 Other dates:
 Midterm report (November 6)
