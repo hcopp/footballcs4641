@@ -20,7 +20,7 @@ Presentation is a single slide with our project proposal
 ### Summary Figure
 Infographic that summarizes the project goal
 ### Introduction/Background
-Problem we aim to address, motivation, and goal
+Problem we aim to address, motivation, and goal  
 Problem: The outcome of a football play is considered to be very unpredictable. The factors that go into it (weather, positions, remaining yards, etc) make it hard for a coach to judge in the moment which plays will allow the team to get the yards needed to succeed.  
 Motivation: Being able to model the number of yards that will be gained by a play will yield a team a competitive advantage.  
 Goal: To model the number of yards that will be gained in an NFL play based on the situation.  
