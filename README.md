@@ -21,12 +21,18 @@ Presentation is a single slide with our project proposal
 Infographic that summarizes the project goal
 ### Introduction/Background
 Problem we aim to address, motivation, and goal
+Problem: The outcome of a football play is considered to be very unpredictable. The factors that go into it (weather, positions, remaining yards, etc) make it hard for a coach to judge in the moment which plays will allow the team to get the yards needed to succeed.  
+Motivation: Being able to model the number of yards that will be gained by a play will yield a team a competitive advantage.  
+Goal: To model the number of yards that will be gained in an NFL play based on the situation.  
 ### Methods
 Outline of dataset we are planning on utilizing & techniques we intend to apply
+
 ### Results
 Talk about the results we are trying to achieve
+
 ### Discussion
 Explain what the best outcome would be, and what the next steps would be
+
 ### References
 List containing at least 3 references, preferably peer reviewed
 
