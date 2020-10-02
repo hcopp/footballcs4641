@@ -42,7 +42,7 @@ The best reasonable outcome would be for us to model 90% of plays successfully, 
 [References PDF](assets/references.pdf)  
 Ota, Karson. “Football Play Type Prediction and Tendency Analysis.” Massachusetts Institute of Technology, June 2017, dspace.mit.edu/bitstream/handle/1721.1/113120/1016455954-MIT.pdf.  
 Teich, Brendan, et al. “NFL Play Predictio.” Research Gate, University of Massachusetts Amherst, Jan. 2016, www.researchgate.net/publication/289406746_NFL_Play_Prediction.  
-Young, Chris. “Applying Machine Learning to Predict BYU Football Play Success.” Medium, Towards Data Science, 6 July 2020, towardsdatascience.com/applying-machine-learning-to-predict-byu-football-play-success-60b57267b78c.  
+Young, Chris. “Applying Machine Learning to Predict BYU Football Play Success.” Medium, Towards Data Science, 6 July 2020, https://towardsdatascience.com/applying-machine-learning-to-predict-byu-football-play-success-60b57267b78c.  
 
 Future dates:
 Midterm report (November 6)
