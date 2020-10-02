@@ -25,11 +25,14 @@ Motivation: Being able to model the number of yards that will be gained by a pla
 Goal: To model the number of yards that will be gained in an NFL play based on the situation.  
 Disclaimer: For simplicity, we will not be including field goals, and for punts, we will model the number of yards gained after the ball is recieved.
 
-### Methods
-Outline of dataset we are planning on utilizing & techniques we intend to apply  
-For our project, we plan on using a [play by play dataset](https://www.kaggle.com/maxhorowitz/nflplaybyplay2009to2016) from recent years.  
-The dataset contains roughly 100 columns of data, with varying importance.  
-We plan on applying a Neural Net, Decision Tree/Random Forest, and Linear Regression techniques. We also plan on using PCA for dimensionality reduction as well. From our dataset, we will select a training set and the rest will be used for testing. 
+### Dataset 
+For our project, we plan on using a [play by play dataset](https://www.kaggle.com/maxhorowitz/nflplaybyplay2009to2016) of NFL plays from recent years. The dataset contains roughly 100 columns of data of varying levels of importance.
+
+### Unsupervised Approaches
+For our unsupervised approach, we plan on running GMM. Ideally we will find clusters for gaining and not gaining yards. We will also probably have to do some dimensionality reduction.
+
+### Supervised Approaches
+We plan on applying a Neural Net, Decision Tree/Random Forest, and Linear Regression techniques. We also plan on using PCA for dimensionality reduction as well. From there, we will compare the performance of the six approaches and pick the best one. We will select a portion of the data as a training set and the rest will be used for testing. 
 
 ### Results
 We would like to predict the amount of yard gain/loss based on a play's stats.
