@@ -43,6 +43,7 @@ def _handle_column(column):
     return (label, series)
 
 def main(file_name):
+    print("Reading...")
     df = pd.read_csv(file_name, low_memory=False, keep_default_na=False)
     labels = df[['play_id', 'yards_gained']]
     labels.to_csv('labels.csv')
@@ -50,10 +51,12 @@ def main(file_name):
 
     with futures.ProcessPoolExecutor() as executor:
         for _, result in zip(range(len(df.columns)), executor.map(_handle_column, df.iteritems())):
+            print(f'{round(_/len(df.columns)*100, 2)}%')
             label, series = result
             df[label] = series
-
+    print("Writing...")
     df.to_csv('scaled.csv')
+    print("Done Writing...")
 
 if __name__ == '__main__':
     FILE_NAME = 'football.csv'
