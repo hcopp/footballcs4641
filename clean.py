@@ -44,6 +44,9 @@ def _handle_column(column):
 
 def main(file_name):
     df = pd.read_csv(file_name, low_memory=False, keep_default_na=False)
+    labels = df[['play_id', 'yards_gained']]
+    labels.to_csv('labels.csv')
+    df.drop(['yards_gained'], axis=1)
 
     with futures.ProcessPoolExecutor() as executor:
         for _, result in zip(range(len(df.columns)), executor.map(_handle_column, df.iteritems())):
