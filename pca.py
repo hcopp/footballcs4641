@@ -26,15 +26,14 @@ def main(num_components):
     pd.DataFrame(pca_out).to_csv('PCA.csv')
     print("Done Writing PCs to CSV...")
     cluster.screeplot(obj=[pc_list, pca.explained_variance_ratio_])
-    get_important_features(pca, df.columns)
+    print(get_important_features(pca, df.columns))
     # Heat Map doesn't really work becuase so many features...
-    # ax = sns.heatmap(pc_components, annot=True, cmap='Spectral')
+    # sns.heatmap(pc_components, annot=True, cmap='Spectral')
     # plt.show()
 
 def get_important_features(pca, initial_feature_names):
     most_important = [np.abs(pca.components_[i]).argmax() for i in range(pca.components_.shape[0])]
     most_important_names = [initial_feature_names[most_important[i]] for i in range(pca.components_.shape[0])]
-    print(most_important_names)
     return most_important_names
 
 if __name__ == '__main__':
