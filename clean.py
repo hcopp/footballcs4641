@@ -21,7 +21,7 @@ def _column_to_ints(column: Series):
         else:
             new_val = len(column_vals)
             column[i] = new_val
-            column_vals[elem] = new_val 
+            column_vals[elem] = new_val
 
 def _handle_column(column):
     """
@@ -42,14 +42,15 @@ def _handle_column(column):
 
     return (label, series)
 
+#'Team', 'PossessionTeam', 'FieldPosition', 'OffenseFormation', 'PlayDirection', 'PlayerCollegeName', 'Position', 'HomeTeamAbbr', 'VisitorTeamAbbr', 'Stadium', 'StadiumType', 'Turf', 'GameWeather', 'WindDirection'
+
 def main(file_name):
     print("Reading...")
     df = pd.read_csv(file_name, low_memory=False, keep_default_na=False)
-    labels = df['playResult']
+    labels = df['Yards']
     labels.to_csv('labels.csv')
-    df = df.drop(columns=['playResult', 'gameId', 'playId', 'offensePlayResult',
-                          'playDescription', 'penaltyCodes', 'penaltyJerseyNumbers',
-                          'passResult', 'epa', 'isDefensivePI'])
+    df = df[df['NflId']==df['NflIdRusher']]
+    df = df.drop(columns=['PlayId', 'GameId', 'DisplayName', 'JerseyNumber', 'Season', 'GameClock', 'OffensePersonnel', 'DefensePersonnel', 'TimeHandoff', 'TimeSnap', 'PlayerHeight', 'PlayerBirthDate', 'Location'], axis=1) # Work on keeping some of these in future
     with futures.ProcessPoolExecutor() as executor:
         for _, result in zip(range(len(df.columns)), executor.map(_handle_column, df.iteritems())):
             print(f'{round(_/len(df.columns)*100, 2)}%')
@@ -60,5 +61,5 @@ def main(file_name):
     print("Done Writing...")
 
 if __name__ == '__main__':
-    FILE_NAME = 'plays.csv'
+    FILE_NAME = 'football.csv'
     main(FILE_NAME)

@@ -13,7 +13,7 @@ def main(num_components):
     print("Scaling...")
     df_st =  StandardScaler().fit_transform(df)
     print("Done Scaling...")
-    print("Performing PCA...")
+    '''print("Performing PCA...")
     pca = PCA(n_components=num_components, svd_solver='full').fit(df_st)
     pca_out = pca.transform(df_st)
     print("Done Performing PCA...")
@@ -26,10 +26,22 @@ def main(num_components):
     pd.DataFrame(pca_out).to_csv('PCA.csv')
     print("Done Writing PCs to CSV...")
     cluster.screeplot(obj=[pc_list, pca.explained_variance_ratio_])
-    print(get_important_features(pca, df.columns))
+    print(get_important_features(pca, df.columns))'''
     # Heat Map doesn't really work becuase so many features...
-    # sns.heatmap(pc_components, annot=True, cmap='Spectral')
-    # plt.show()
+    corr = df.corr()
+    heatmap = sns.heatmap(corr,
+        vmin=-1, vmax=1, center=0, cmap='Spectral', square=True, xticklabels=1, yticklabels=1)
+    heatmap.set_xticklabels(
+        heatmap.get_xticklabels(),
+        rotation=45,
+        horizontalalignment='right'
+    )
+    heatmap.set_yticklabels(
+        heatmap.get_yticklabels(),
+        rotation=45,
+        horizontalalignment='right'
+    )
+    plt.show()
 
 def get_important_features(pca, initial_feature_names):
     most_important = [np.abs(pca.components_[i]).argmax() for i in range(pca.components_.shape[0])]
