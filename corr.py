@@ -2,7 +2,7 @@ import pandas as pd
 import seaborn as sn
 import matplotlib.pyplot as plt
 
-df = pd.read_csv('scaled.csv')
+df = pd.read_csv('./data/scaled.csv')
 corr = df.corr()
 cmap = sn.diverging_palette(230, 20, as_cmap=True)
 # We prepare the plot  

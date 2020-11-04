@@ -2,16 +2,16 @@ from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 import numpy as np
 import pandas as pd
-import seaborn as sns
+import seaborn as sn
 import matplotlib.pyplot as plt
 from bioinfokit.visuz import cluster
 
 def main(num_components):
     print("Reading...")
-    df = pd.read_csv('scaled.csv')
+    df = pd.read_csv('./data/scaled.csv')
     print("Done Reading...")
     print("Scaling...")
-    df_st =  StandardScaler().fit_transform(df)
+    df_st = StandardScaler().fit_transform(df)
     print("Done Scaling...")
     print("Performing PCA...")
     pca = PCA(n_components=num_components, svd_solver='full').fit(df_st)
@@ -23,12 +23,13 @@ def main(num_components):
     pc_components_df['variable'] = df.columns.values
     pc_components_df = pc_components_df.set_index('variable')
     print("Writing PCs to CSV...")
-    pd.DataFrame(pca_out).to_csv('PCA.csv')
+    pd.DataFrame(pca_out).to_csv('./data/PCA.csv')
     print("Done Writing PCs to CSV...")
-    cluster.screeplot(obj=[pc_list, pca.explained_variance_ratio_])
+    cluster.screeplot(obj=[pc_list, pca.explained_variance_ratio_], )
     print(get_important_features(pca, df.columns))
     # Heat Map doesn't really work becuase so many features...
-    # sns.heatmap(pc_components, annot=True, cmap='Spectral')
+    # cmap = sn.diverging_palette(230, 20, as_cmap=True)
+    # sn.heatmap(pc_components_df, cmap=cmap, center=0, cbar_kws={'shrink': .5}, annot=False, xticklabels=True, yticklabels=True)
     # plt.show()
 
 def get_important_features(pca, initial_feature_names):
