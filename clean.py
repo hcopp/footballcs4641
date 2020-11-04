@@ -45,10 +45,11 @@ def _handle_column(column):
 def main(file_name):
     print("Reading...")
     df = pd.read_csv(file_name, low_memory=False, keep_default_na=False)
-    labels = df[['play_id', 'yards_gained']]
+    labels = df['playResult']
     labels.to_csv('labels.csv')
-    df.drop(['yards_gained'], axis=1)
-
+    df = df.drop(columns=['playResult', 'gameId', 'playId', 'offensePlayResult',
+                          'playDescription', 'penaltyCodes', 'penaltyJerseyNumbers',
+                          'passResult', 'epa', 'isDefensivePI'])
     with futures.ProcessPoolExecutor() as executor:
         for _, result in zip(range(len(df.columns)), executor.map(_handle_column, df.iteritems())):
             print(f'{round(_/len(df.columns)*100, 2)}%')
@@ -59,5 +60,5 @@ def main(file_name):
     print("Done Writing...")
 
 if __name__ == '__main__':
-    FILE_NAME = 'football.csv'
+    FILE_NAME = 'plays.csv'
     main(FILE_NAME)
