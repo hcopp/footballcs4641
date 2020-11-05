@@ -13,7 +13,7 @@ ax.tick_params(axis='both', which='major', labelsize=8)
 ax.tick_params(axis='both', which='minor', labelsize=8)
 
 sn.heatmap(corr, cmap=cmap, center=0, cbar_kws={'shrink': .5}, annot=False, xticklabels=True, yticklabels=True)
-plt.show()
+#plt.show()
 plt.yticks(rotation=45)
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
