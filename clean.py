@@ -3,7 +3,6 @@ import numbers
 
 import pandas as pd
 from pandas.core.series import Series
-from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
 
 
