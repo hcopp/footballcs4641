@@ -2,9 +2,10 @@ from concurrent import futures
 import numbers
 
 import pandas as pd
+from pandas import DataFrame
 from pandas.core.series import Series
-from sklearn.decomposition import PCA
 from sklearn.preprocessing import StandardScaler
+
 
 def _column_to_ints(column: Series):
     """
@@ -21,7 +22,8 @@ def _column_to_ints(column: Series):
         else:
             new_val = len(column_vals)
             column[i] = new_val
-            column_vals[elem] = new_val 
+            column_vals[elem] = new_val
+
 
 def _handle_column(column):
     """
@@ -34,31 +36,39 @@ def _handle_column(column):
 
     if not isinstance(series[0], numbers.Number):
         _column_to_ints(series)
-
+    unscaled = series.copy()
     scaler = StandardScaler()
     scaled = scaler.fit_transform(series.values.reshape(-1, 1)).flatten()
     # print(scaled)
     series.update(scaled)
 
-    return (label, series)
+    return label, series, unscaled
+
 
 def main(file_name):
     print("Reading...")
     df = pd.read_csv(file_name, low_memory=False, keep_default_na=False)
-    labels = df['playResult']
-    labels.to_csv('labels.csv')
-    df = df.drop(columns=['playResult', 'gameId', 'playId', 'offensePlayResult',
-                          'playDescription', 'penaltyCodes', 'penaltyJerseyNumbers',
-                          'passResult', 'epa', 'isDefensivePI'])
+    print("Done Reading...")
+    df = df[df['NflId'] == df['NflIdRusher']]
+    df = df.reset_index(drop=True)
+    labels = df['Yards']
+    labels.to_csv('./data/labels.csv')
+    df = df.drop(columns=['GameId', 'PlayId', 'X', 'Y', 'S', 'A', 'Dis', 'Orientation', 'Dir', 'DisplayName',
+                          'JerseyNumber', 'NflIdRusher', 'TimeHandoff', 'TimeSnap', 'Yards'])
+    df.to_csv("./data/column_filtered.csv", index=False)
+    cleaned = DataFrame()
     with futures.ProcessPoolExecutor() as executor:
         for _, result in zip(range(len(df.columns)), executor.map(_handle_column, df.iteritems())):
-            print(f'{round(_/len(df.columns)*100, 2)}%')
-            label, series = result
+            print(f'{round(_ / len(df.columns) * 100, 2)}%')
+            label, series, unscaled = result
             df[label] = series
+            cleaned[label] = unscaled
     print("Writing...")
-    df.to_csv('scaled.csv')
+    df.to_csv('./data/scaled.csv', index=False)
+    cleaned.to_csv('./data/cleaned.csv', index=False)
     print("Done Writing...")
 
+
 if __name__ == '__main__':
-    FILE_NAME = 'plays.csv'
+    FILE_NAME = './data/train.csv'
     main(FILE_NAME)
