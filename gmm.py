@@ -17,8 +17,7 @@ from sklearn.preprocessing import StandardScaler
 def find_num_clusters(max_clusters):
     # SETUP #
     data = pd.read_csv('./data/scaled.csv')
-    X = data.values
-    Y = pd.read_csv('./data/labels.csv')['Yards'].values
+    x = data.values
     range_n_clusters = range(2, max_clusters + 1)
     all_silhouette_scores = []
 
@@ -29,18 +28,18 @@ def find_num_clusters(max_clusters):
         plt.xlim([-0.2, 1])
         # The (n_clusters+1)*10 is for inserting blank space between silhouette
         # plots of individual clusters, to demarcate them clearly.
-        plt.ylim([0, len(X) + (n_clusters + 1) * 10])
+        plt.ylim([0, len(x) + (n_clusters + 1) * 10])
         # Initialize the clusterer with n_clusters value
         clusterer = GaussianMixture(n_clusters)
-        cluster_labels = clusterer.fit_predict(X)
+        cluster_labels = clusterer.fit_predict(x)
         # The silhouette_score gives the average value for all the samples.
         # This gives a perspective into the density and separation of the formed clusters
-        silhouette_avg = silhouette_score(X, cluster_labels)
+        silhouette_avg = silhouette_score(x, cluster_labels)
         all_silhouette_scores.append(silhouette_avg)
         print("For n_clusters =", n_clusters,
               "The average silhouette_score is :", silhouette_avg)
         # Compute the silhouette scores for each sample
-        sample_silhouette_values = silhouette_samples(X, cluster_labels)
+        sample_silhouette_values = silhouette_samples(x, cluster_labels)
         y_lower = 10
         for i in range(n_clusters):
             # Aggregate the silhouette scores for samples belonging to
@@ -49,7 +48,7 @@ def find_num_clusters(max_clusters):
             ith_cluster_silhouette_values.sort()
             size_cluster_i = ith_cluster_silhouette_values.shape[0]
             y_upper = y_lower + size_cluster_i
-            color = cm.nipy_spectral(float(i) / n_clusters)
+            color = cm.get_cmap("Spectral")(float(i) / n_clusters)
             plt.fill_betweenx(np.arange(y_lower, y_upper),
                               0, ith_cluster_silhouette_values,
                               facecolor=color, edgecolor=color, alpha=0.7)
@@ -117,17 +116,16 @@ def make_visualization(viz_type, dim, n_clusters, plot_x, cluster_labels, colors
 
 def visualize_clusters(n_clusters, dim):
     data = pd.read_csv('./data/scaled.csv')
-    X = data.values
-    Y = pd.read_csv('./data/labels.csv')['Yards'].values
+    x = data.values
     clusterer = GaussianMixture(n_clusters)
-    cluster_labels = clusterer.fit_predict(X)
+    cluster_labels = clusterer.fit_predict(x)
     scaler = StandardScaler().fit(pd.read_csv('./data/cleaned.csv'))
     cluster_label_means = []
     cluster_label_stds = []
     for n in range(n_clusters):
-        print(f'Number of Plays in Cluster {n + 1}: {len(X[cluster_labels == n])}')
-        means = np.average(scaler.inverse_transform(X)[cluster_labels == n], axis=0).round(4)
-        stds = np.std(scaler.inverse_transform(X)[cluster_labels == n], axis=0).round(4)
+        print(f'Number of Plays in Cluster {n + 1}: {len(x[cluster_labels == n])}')
+        means = np.average(scaler.inverse_transform(x)[cluster_labels == n], axis=0).round(4)
+        stds = np.std(scaler.inverse_transform(x)[cluster_labels == n], axis=0).round(4)
         cluster_label_means.append(means)
         cluster_label_stds.append(stds)
     DataFrame(cluster_label_means, columns=data.columns)\
@@ -138,34 +136,34 @@ def visualize_clusters(n_clusters, dim):
     if dim == 1:
         tsne_1d = TSNE(n_components=1)
         pca_1d = PCA(n_components=1)
-        TCs_1d = pd.DataFrame(tsne_1d.fit_transform(X))
-        PCs_1d = pd.DataFrame(pca_1d.fit_transform(X))
-        TCs_1d.columns = ["TC1_1d"]
-        PCs_1d.columns = ["PC1_1d"]
-        plotX_TSNE = pd.concat([data, TCs_1d], axis=1, join='inner')
-        plotX_PCA = pd.concat([data, PCs_1d], axis=1, join='inner')
-        plotX_TSNE["zero"] = 0
-        plotX_PCA["zero"] = 0
+        tcs_1d = pd.DataFrame(tsne_1d.fit_transform(x))
+        pcs_1d = pd.DataFrame(pca_1d.fit_transform(x))
+        tcs_1d.columns = ["TC1_1d"]
+        pcs_1d.columns = ["PC1_1d"]
+        plot_x_tsne = pd.concat([data, tcs_1d], axis=1, join='inner')
+        plot_x_pca = pd.concat([data, pcs_1d], axis=1, join='inner')
+        plot_x_tsne["zero"] = 0
+        plot_x_pca["zero"] = 0
     # Two dimensions
     elif dim == 2:
         tsne_2d = TSNE(n_components=2)
         pca_2d = PCA(n_components=2)
-        TCs_2d = pd.DataFrame(tsne_2d.fit_transform(X))
-        PCs_2d = pd.DataFrame(pca_2d.fit_transform(X))
-        TCs_2d.columns = ["TC1_2d", "TC2_2d"]
-        PCs_2d.columns = ["PC1_2d", "PC2_2d"]
-        plotX_TSNE = pd.concat([data, TCs_2d], axis=1, join='inner')
-        plotX_PCA = pd.concat([data, PCs_2d], axis=1, join='inner')
+        tcs_2d = pd.DataFrame(tsne_2d.fit_transform(x))
+        pcs_2d = pd.DataFrame(pca_2d.fit_transform(x))
+        tcs_2d.columns = ["TC1_2d", "TC2_2d"]
+        pcs_2d.columns = ["PC1_2d", "PC2_2d"]
+        plot_x_tsne = pd.concat([data, tcs_2d], axis=1, join='inner')
+        plot_x_pca = pd.concat([data, pcs_2d], axis=1, join='inner')
     # Three dimensions
     elif dim == 3:
         tsne_3d = TSNE(n_components=3)
         pca_3d = PCA(n_components=3)
-        TCs_3d = pd.DataFrame(tsne_3d.fit_transform(X))
-        PCs_3d = pd.DataFrame(pca_3d.fit_transform(X))
-        TCs_3d.columns = ["TC1_3d", "TC2_3d", "TC3_3d"]
-        PCs_3d.columns = ["PC1_3d", "PC2_3d", "PC3_3d"]
-        plotX_TSNE = pd.concat([data, TCs_3d], axis=1, join='inner')
-        plotX_PCA = pd.concat([data, PCs_3d], axis=1, join='inner')
+        tcs_3d = pd.DataFrame(tsne_3d.fit_transform(x))
+        pcs_3d = pd.DataFrame(pca_3d.fit_transform(x))
+        tcs_3d.columns = ["TC1_3d", "TC2_3d", "TC3_3d"]
+        pcs_3d.columns = ["PC1_3d", "PC2_3d", "PC3_3d"]
+        plot_x_tsne = pd.concat([data, tcs_3d], axis=1, join='inner')
+        plot_x_pca = pd.concat([data, pcs_3d], axis=1, join='inner')
     else:
         print("Invalid Dimension...")
         return
@@ -173,27 +171,28 @@ def visualize_clusters(n_clusters, dim):
                     'black', 'lightskyblue', 'orange', 'darkred',
                     'salmon', 'cyan', 'lime', 'slategray', 'teal',
                     'peru', 'orchid', 'crimson', 'thistle', 'lavender']
-    make_visualization('T', dim, n_clusters, plotX_TSNE, cluster_labels, graph_colors)
-    make_visualization('P', dim, n_clusters, plotX_PCA, cluster_labels, graph_colors)
+    make_visualization('T', dim, n_clusters, plot_x_tsne, cluster_labels, graph_colors)
+    make_visualization('P', dim, n_clusters, plot_x_pca, cluster_labels, graph_colors)
+
 
 def plot_all_points():
     data = pd.read_csv('./data/scaled.csv')
-    X = data.values
-    Y = pd.read_csv('./data/labels.csv')['Yards'].values
+    x = data.values
     x_index = np.argmax(np.var(data, axis=0))
     y_index = np.argmax(np.var(data.drop(columns=[data.columns[x_index]]), axis=0))
-    print(f'{data.columns[x_index]}: {x_index}')
-    print(f'{data.columns[y_index]}: {y_index}')
-    plt.plot(X[:, x_index], X[:, y_index], 'o', markeredgecolor='k', markersize=14)
+    print(np.var(data.drop(columns=[data.columns[x_index]]), axis=0))
+    column_name = data.drop(columns=[data.columns[x_index]]).columns[y_index]
+    y_index = data.columns.tolist().index(column_name)
+    plt.plot(x[:3000, x_index], x[:3000, y_index], '.b')
     plt.xlabel(data.columns[x_index])
     plt.ylabel(data.columns[y_index])
     plt.show()
 
+
 def dbscan():
     data = pd.read_csv('./data/scaled.csv')
-    X = data.values
-    Y = pd.read_csv('./data/labels.csv')['Yards'].values
-    db = DBSCAN(eps=3, ).fit(X)
+    x = data.values
+    db = DBSCAN(eps=3).fit(x)
     core_samples_mask = np.zeros_like(db.labels_, dtype=bool)
     core_samples_mask[db.core_sample_indices_] = True
     labels = db.labels_
@@ -201,26 +200,25 @@ def dbscan():
     n_noise_ = list(labels).count(-1)
     print('Estimated number of clusters: %d' % n_clusters_)
     print('Estimated number of noise points: %d' % n_noise_)
-    print("Silhouette Coefficient: %0.3f" % metrics.silhouette_score(X, labels))
+    print("Silhouette Coefficient: %0.3f" % metrics.silhouette_score(x, labels))
     unique_labels = set(labels)
-    colors = [plt.cm.Spectral(each)
+    colors = [cm.get_cmap("Spectral")(each)
               for each in np.linspace(0, 1, len(unique_labels))]
     for k, col in zip(unique_labels, colors):
         if k == -1:
             # Black used for noise.
             col = [0, 0, 0, 1]
         class_member_mask = (labels == k)
-        xy = X[class_member_mask & core_samples_mask]
-        plt.plot(xy[:, 0], xy[:, 1], 'o', markerfacecolor=tuple(col),
-                 markeredgecolor='k', markersize=14)
-        xy = X[class_member_mask & ~core_samples_mask]
-        plt.plot(xy[:, 0], xy[:, 1], 'o', markerfacecolor=tuple(col),
-                 markeredgecolor='k', markersize=6)
+        xy = x[class_member_mask & core_samples_mask]
+        plt.plot(xy[:, 0], xy[:, 1], '.b', markerfacecolor=tuple(col))
+        xy = x[class_member_mask & ~core_samples_mask]
+        plt.plot(xy[:, 0], xy[:, 1], '.b', markerfacecolor=tuple(col))
     plt.title('Estimated number of clusters: %d' % n_clusters_)
     plt.show()
 
 
 if __name__ == '__main__':
-    # find_num_clusters(20)
-    visualize_clusters(3, 3)
-
+    plot_all_points()
+    dbscan()
+    find_num_clusters(20)
+    visualize_clusters(3, 2)
