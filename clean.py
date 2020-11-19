@@ -44,6 +44,16 @@ def _handle_column(column):
 
     return label, series, unscaled
 
+def _thresholds(data):
+    data[data < 0] = 0
+    data[(data >= 0) & (data < 2)] = 1
+    data[(data >= 2) & (data < 4)] = 2
+    data[(data >= 4) & (data < 6)] = 3
+    data[(data >= 6) & (data < 8)] = 4
+    data[(data >= 8) & (data < 10)] = 5
+    data[(data >= 10) & (data < 15)] = 6
+    data[(data >= 15) & (data < 30)] = 7
+    data[data >= 30] = 8
 
 def main(file_name):
     print("Reading...")
@@ -51,7 +61,8 @@ def main(file_name):
     print("Done Reading...")
     df = df[df['NflId'] == df['NflIdRusher']]
     df = df.reset_index(drop=True)
-    labels = df['Yards']
+    labels = df['Yards'].to_frame()
+    _thresholds(labels)
     labels.to_csv('./data/labels.csv')
     df = df.drop(columns=['GameId', 'PlayId', 'X', 'Y', 'S', 'A', 'Dis', 'Orientation', 'Dir', 'DisplayName',
                           'JerseyNumber', 'NflIdRusher', 'TimeHandoff', 'TimeSnap', 'Yards'])
