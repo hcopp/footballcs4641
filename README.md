@@ -12,6 +12,8 @@ Daniel Mulloy, Steven McGaughey, William Hunnicutt, and Hunter Copp.
 [Pre-recorded video](assets/touch_point_2_video.mp4)
 
 ### Touch-point 3 (November 20)
+[Google Slides](https://docs.google.com/presentation/d/1azkIXxq7cwaeWjRAsN18MyXlp62RFgxlQOlzit0q0TQ/edit#slide=id.ga6ac8435e2_0_276)  
+[Pre-recorded video](assets/touch_point_3_video.mp4)
 
 ## Midterm report (November 6)
 
