@@ -1,6 +1,7 @@
 from concurrent import futures
 import numbers
 
+import numpy as np
 import pandas as pd
 from pandas import DataFrame
 from pandas.core.series import Series
@@ -44,16 +45,22 @@ def _handle_column(column):
 
     return label, series, unscaled
 
-def _thresholds(data):
-    data[data < 0] = 0
-    data[(data >= 0) & (data < 2)] = 1
-    data[(data >= 2) & (data < 4)] = 2
-    data[(data >= 4) & (data < 6)] = 3
-    data[(data >= 6) & (data < 8)] = 4
-    data[(data >= 8) & (data < 10)] = 5
-    data[(data >= 10) & (data < 15)] = 6
-    data[(data >= 15) & (data < 30)] = 7
-    data[data >= 30] = 8
+def _thresholds(data: DataFrame):
+    newLabels = []
+    for i in data.values:
+        if i < -15: newLabels.append("< -15")
+        elif -15 <= i <= -1: newLabels.append("[-15, -1]")
+        elif i == 0: newLabels.append("0")
+        elif i == 1: newLabels.append("1")
+        elif i == 2: newLabels.append("2")
+        elif i == 3: newLabels.append("3")
+        elif i == 4: newLabels.append("4")
+        elif i == 5: newLabels.append("5")
+        elif 6 <= i <= 7: newLabels.append("[6, 7]")
+        elif 8 <= i <= 10: newLabels.append("[8, 10]")
+        elif 11 <= i <= 20: newLabels.append("[11, 20]")
+        else: newLabels.append("> 20")
+    return DataFrame(newLabels, columns=["Yards"])
 
 def main(file_name):
     print("Reading...")
@@ -62,7 +69,8 @@ def main(file_name):
     df = df[df['NflId'] == df['NflIdRusher']]
     df = df.reset_index(drop=True)
     labels = df['Yards'].to_frame()
-    _thresholds(labels)
+    bins = _thresholds(labels)
+    bins.to_csv('./data/bins.csv')
     labels.to_csv('./data/labels.csv')
     df = df.drop(columns=['GameId', 'PlayId', 'X', 'Y', 'S', 'A', 'Dis', 'Orientation', 'Dir', 'DisplayName',
                           'JerseyNumber', 'NflIdRusher', 'TimeHandoff', 'TimeSnap', 'Yards'])

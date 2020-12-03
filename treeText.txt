@@ -1,0 +1,1630 @@
+|--- YardLine <= -2.05
+|   |--- Distance <= -0.74
+|   |   |--- HomeTeamAbbr <= -0.09
+|   |   |   |--- PlayerCollegeName <= 0.45
+|   |   |   |   |--- PlayerWeight <= -1.20
+|   |   |   |   |   |--- GameWeather <= -0.48
+|   |   |   |   |   |   |--- Down <= -0.03
+|   |   |   |   |   |   |   |--- GameClock <= -0.07
+|   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |--- GameClock >  -0.07
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Down >  -0.03
+|   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |--- GameWeather >  -0.48
+|   |   |   |   |   |   |--- Position <= 0.54
+|   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |   |--- Position >  0.54
+|   |   |   |   |   |   |   |--- class: -5
+|   |   |   |   |--- PlayerWeight >  -1.20
+|   |   |   |   |   |--- Stadium <= -0.73
+|   |   |   |   |   |   |--- GameClock <= -0.65
+|   |   |   |   |   |   |   |--- GameClock <= -1.46
+|   |   |   |   |   |   |   |   |--- PlayerHeight <= 0.42
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- PlayerHeight >  0.42
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- GameClock >  -1.46
+|   |   |   |   |   |   |   |   |--- OffenseFormation <= 1.07
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- OffenseFormation >  1.07
+|   |   |   |   |   |   |   |   |   |--- OffensePersonnel <= 1.44
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- OffensePersonnel >  1.44
+|   |   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |--- GameClock >  -0.65
+|   |   |   |   |   |   |   |--- Temperature <= 0.40
+|   |   |   |   |   |   |   |   |--- Humidity <= -1.12
+|   |   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay <= 0.18
+|   |   |   |   |   |   |   |   |   |   |--- PlayerHeight <= -0.20
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- PlayerHeight >  -0.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay >  0.18
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Humidity >  -1.12
+|   |   |   |   |   |   |   |   |   |--- PossessionTeam <= -0.98
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition <= -0.45
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition >  -0.45
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- PossessionTeam >  -0.98
+|   |   |   |   |   |   |   |   |   |   |--- WindDirection <= -0.40
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- WindDirection >  -0.40
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Temperature >  0.40
+|   |   |   |   |   |   |   |   |--- WindDirection <= -0.35
+|   |   |   |   |   |   |   |   |   |--- Down <= 1.45
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition <= -1.52
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition >  -1.52
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- Down >  1.45
+|   |   |   |   |   |   |   |   |   |   |--- WindDirection <= -0.65
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- WindDirection >  -0.65
+|   |   |   |   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |   |   |   |--- WindDirection >  -0.35
+|   |   |   |   |   |   |   |   |   |--- Down <= 1.45
+|   |   |   |   |   |   |   |   |   |   |--- VisitorTeamAbbr <= 1.45
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- VisitorTeamAbbr >  1.45
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- Down >  1.45
+|   |   |   |   |   |   |   |   |   |   |--- Humidity <= 0.68
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Humidity >  0.68
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Stadium >  -0.73
+|   |   |   |   |   |   |--- Season <= -0.47
+|   |   |   |   |   |   |   |--- PlayerCollegeName <= 0.21
+|   |   |   |   |   |   |   |   |--- VisitorTeamAbbr <= -0.82
+|   |   |   |   |   |   |   |   |   |--- PlayerCollegeName <= -0.24
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- PlayerCollegeName >  -0.24
+|   |   |   |   |   |   |   |   |   |   |--- OffenseFormation <= -0.61
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- OffenseFormation >  -0.61
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- VisitorTeamAbbr >  -0.82
+|   |   |   |   |   |   |   |   |   |--- PlayerWeight <= -0.34
+|   |   |   |   |   |   |   |   |   |   |--- GameClock <= 0.24
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- GameClock >  0.24
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- PlayerWeight >  -0.34
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- PlayerCollegeName >  0.21
+|   |   |   |   |   |   |   |   |--- GameClock <= -0.35
+|   |   |   |   |   |   |   |   |   |--- Humidity <= 0.13
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Humidity >  0.13
+|   |   |   |   |   |   |   |   |   |   |--- class: -4
+|   |   |   |   |   |   |   |   |--- GameClock >  -0.35
+|   |   |   |   |   |   |   |   |   |--- GameClock <= 0.80
+|   |   |   |   |   |   |   |   |   |   |--- DefendersInTheBox <= 0.93
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- DefendersInTheBox >  0.93
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- GameClock >  0.80
+|   |   |   |   |   |   |   |   |   |   |--- DefendersInTheBox <= 0.62
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- DefendersInTheBox >  0.62
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Season >  -0.47
+|   |   |   |   |   |   |   |--- OffensePersonnel <= 1.44
+|   |   |   |   |   |   |   |   |--- DefensePersonnel <= -0.09
+|   |   |   |   |   |   |   |   |   |--- DefendersInTheBox <= 0.93
+|   |   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |   |--- DefendersInTheBox >  0.93
+|   |   |   |   |   |   |   |   |   |   |--- PlayerHeight <= 0.21
+|   |   |   |   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |   |   |   |   |   |--- PlayerHeight >  0.21
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- DefensePersonnel >  -0.09
+|   |   |   |   |   |   |   |   |   |--- PlayerBirthDate <= -0.59
+|   |   |   |   |   |   |   |   |   |   |--- GameClock <= -0.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- GameClock >  -0.05
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- PlayerBirthDate >  -0.59
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- OffensePersonnel >  1.44
+|   |   |   |   |   |   |   |   |--- OffensePersonnel <= 3.66
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- OffensePersonnel >  3.66
+|   |   |   |   |   |   |   |   |   |--- GameClock <= -0.49
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- GameClock >  -0.49
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |--- PlayerCollegeName >  0.45
+|   |   |   |   |--- NflId <= 0.22
+|   |   |   |   |   |--- VisitorScoreBeforePlay <= 0.39
+|   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- VisitorScoreBeforePlay >  0.39
+|   |   |   |   |   |   |--- class: -1
+|   |   |   |   |--- NflId >  0.22
+|   |   |   |   |   |--- PlayerBirthDate <= 0.02
+|   |   |   |   |   |   |--- GameClock <= 0.33
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- GameClock >  0.33
+|   |   |   |   |   |   |   |--- class: -3
+|   |   |   |   |   |--- PlayerBirthDate >  0.02
+|   |   |   |   |   |   |--- Down <= -0.03
+|   |   |   |   |   |   |   |--- HomeScoreBeforePlay <= -0.45
+|   |   |   |   |   |   |   |   |--- PossessionTeam <= 0.81
+|   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |--- PossessionTeam >  0.81
+|   |   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |   |   |--- HomeScoreBeforePlay >  -0.45
+|   |   |   |   |   |   |   |   |--- OffensePersonnel <= -0.29
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- OffensePersonnel >  -0.29
+|   |   |   |   |   |   |   |   |   |--- GameWeather <= -0.44
+|   |   |   |   |   |   |   |   |   |   |--- class: -5
+|   |   |   |   |   |   |   |   |   |--- GameWeather >  -0.44
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Down >  -0.03
+|   |   |   |   |   |   |   |--- HomeTeamAbbr <= -1.50
+|   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay <= 0.74
+|   |   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay >  0.74
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- HomeTeamAbbr >  -1.50
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |--- HomeTeamAbbr >  -0.09
+|   |   |   |--- Week <= -0.81
+|   |   |   |   |--- Down <= 2.93
+|   |   |   |   |   |--- FieldPosition <= -0.93
+|   |   |   |   |   |   |--- GameWeather <= -0.69
+|   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |   |--- GameWeather >  -0.69
+|   |   |   |   |   |   |   |--- Quarter <= 0.87
+|   |   |   |   |   |   |   |   |--- OffenseFormation <= 1.07
+|   |   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay <= 1.55
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay >  1.55
+|   |   |   |   |   |   |   |   |   |   |--- DefendersInTheBox <= 1.56
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- DefendersInTheBox >  1.56
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- OffenseFormation >  1.07
+|   |   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |   |   |--- Quarter >  0.87
+|   |   |   |   |   |   |   |   |--- DefensePersonnel <= 0.07
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- DefensePersonnel >  0.07
+|   |   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |--- FieldPosition >  -0.93
+|   |   |   |   |   |   |--- DefensePersonnel <= 2.44
+|   |   |   |   |   |   |   |--- Temperature <= 1.66
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Temperature >  1.66
+|   |   |   |   |   |   |   |   |--- Down <= 1.45
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Down >  1.45
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- DefensePersonnel >  2.44
+|   |   |   |   |   |   |   |--- WindSpeed <= -1.00
+|   |   |   |   |   |   |   |   |--- Location <= 0.08
+|   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |--- Location >  0.08
+|   |   |   |   |   |   |   |   |   |--- Quarter <= -0.01
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Quarter >  -0.01
+|   |   |   |   |   |   |   |   |   |   |--- Down <= -0.03
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Down >  -0.03
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- WindSpeed >  -1.00
+|   |   |   |   |   |   |   |   |--- Week <= -1.02
+|   |   |   |   |   |   |   |   |   |--- PlayerBirthDate <= 0.04
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- PlayerBirthDate >  0.04
+|   |   |   |   |   |   |   |   |   |   |--- WindSpeed <= 0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- WindSpeed >  0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Week >  -1.02
+|   |   |   |   |   |   |   |   |   |--- class: -4
+|   |   |   |   |--- Down >  2.93
+|   |   |   |   |   |--- PlayerCollegeName <= -0.60
+|   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |--- PlayerCollegeName >  -0.60
+|   |   |   |   |   |   |--- DefendersInTheBox <= 1.25
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- DefendersInTheBox >  1.25
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |--- Week >  -0.81
+|   |   |   |   |--- PlayerCollegeName <= 0.31
+|   |   |   |   |   |--- Humidity <= -1.20
+|   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |--- Humidity >  -1.20
+|   |   |   |   |   |   |--- NflId <= 0.22
+|   |   |   |   |   |   |   |--- Temperature <= 0.78
+|   |   |   |   |   |   |   |   |--- Location <= -0.38
+|   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |--- Location >  -0.38
+|   |   |   |   |   |   |   |   |   |--- OffenseFormation <= 0.06
+|   |   |   |   |   |   |   |   |   |   |--- Down <= 1.45
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- Down >  1.45
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- OffenseFormation >  0.06
+|   |   |   |   |   |   |   |   |   |   |--- Down <= 1.45
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- Down >  1.45
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- Temperature >  0.78
+|   |   |   |   |   |   |   |   |--- DefensePersonnel <= 2.75
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- DefensePersonnel >  2.75
+|   |   |   |   |   |   |   |   |   |--- Location <= -0.20
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Location >  -0.20
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- NflId >  0.22
+|   |   |   |   |   |   |   |--- DefendersInTheBox <= -0.62
+|   |   |   |   |   |   |   |   |--- PlayerWeight <= 1.72
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- PlayerWeight >  1.72
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- DefendersInTheBox >  -0.62
+|   |   |   |   |   |   |   |   |--- Humidity <= 2.09
+|   |   |   |   |   |   |   |   |   |--- GameWeather <= -0.19
+|   |   |   |   |   |   |   |   |   |   |--- Location <= -0.31
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Location >  -0.31
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- GameWeather >  -0.19
+|   |   |   |   |   |   |   |   |   |   |--- GameClock <= -1.19
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- GameClock >  -1.19
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |--- Humidity >  2.09
+|   |   |   |   |   |   |   |   |   |--- PlayerWeight <= -0.08
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition <= -0.35
+|   |   |   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition >  -0.35
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- PlayerWeight >  -0.08
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |--- PlayerCollegeName >  0.31
+|   |   |   |   |   |--- Location <= 0.54
+|   |   |   |   |   |   |--- DefendersInTheBox <= 2.49
+|   |   |   |   |   |   |   |--- PossessionTeam <= 1.52
+|   |   |   |   |   |   |   |   |--- Down <= 2.93
+|   |   |   |   |   |   |   |   |   |--- DefensePersonnel <= 6.38
+|   |   |   |   |   |   |   |   |   |   |--- GameClock <= 1.37
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- GameClock >  1.37
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- DefensePersonnel >  6.38
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Down >  2.93
+|   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |--- PossessionTeam >  1.52
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- DefendersInTheBox >  2.49
+|   |   |   |   |   |   |   |--- Down <= 1.45
+|   |   |   |   |   |   |   |   |--- FieldPosition <= -1.25
+|   |   |   |   |   |   |   |   |   |--- GameClock <= -0.42
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- GameClock >  -0.42
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- FieldPosition >  -1.25
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- Down >  1.45
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- Location >  0.54
+|   |   |   |   |   |   |--- class: 1
+|   |--- Distance >  -0.74
+|   |   |--- Humidity <= -0.24
+|   |   |   |--- StadiumType <= 0.33
+|   |   |   |   |--- VisitorTeamAbbr <= -0.82
+|   |   |   |   |   |--- PlayerBirthDate <= 0.15
+|   |   |   |   |   |   |--- GameWeather <= -0.55
+|   |   |   |   |   |   |   |--- class: 99
+|   |   |   |   |   |   |--- GameWeather >  -0.55
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |--- PlayerBirthDate >  0.15
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |--- VisitorTeamAbbr >  -0.82
+|   |   |   |   |   |--- GameClock <= 0.59
+|   |   |   |   |   |   |--- Humidity <= -1.07
+|   |   |   |   |   |   |   |--- Week <= -1.33
+|   |   |   |   |   |   |   |   |--- class: 5
+|   |   |   |   |   |   |   |--- Week >  -1.33
+|   |   |   |   |   |   |   |   |--- PlayerBirthDate <= 0.84
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- PlayerBirthDate >  0.84
+|   |   |   |   |   |   |   |   |   |--- Down <= -0.03
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Down >  -0.03
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- Humidity >  -1.07
+|   |   |   |   |   |   |   |--- HomeScoreBeforePlay <= -0.25
+|   |   |   |   |   |   |   |   |--- PlayerWeight <= 0.71
+|   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |--- PlayerWeight >  0.71
+|   |   |   |   |   |   |   |   |   |--- WindDirection <= -0.73
+|   |   |   |   |   |   |   |   |   |   |--- Turf <= -0.66
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |   |   |--- Turf >  -0.66
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 11
+|   |   |   |   |   |   |   |   |   |--- WindDirection >  -0.73
+|   |   |   |   |   |   |   |   |   |   |--- Location <= -0.24
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 8
+|   |   |   |   |   |   |   |   |   |   |--- Location >  -0.24
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 5
+|   |   |   |   |   |   |   |--- HomeScoreBeforePlay >  -0.25
+|   |   |   |   |   |   |   |   |--- class: 6
+|   |   |   |   |   |--- GameClock >  0.59
+|   |   |   |   |   |   |--- class: 0
+|   |   |   |--- StadiumType >  0.33
+|   |   |   |   |--- Humidity <= -1.01
+|   |   |   |   |   |--- Temperature <= 0.18
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- Temperature >  0.18
+|   |   |   |   |   |   |--- class: 5
+|   |   |   |   |--- Humidity >  -1.01
+|   |   |   |   |   |--- class: 1
+|   |   |--- Humidity >  -0.24
+|   |   |   |--- WindDirection <= 1.13
+|   |   |   |   |--- HomeScoreBeforePlay <= 0.79
+|   |   |   |   |   |--- VisitorTeamAbbr <= 1.55
+|   |   |   |   |   |   |--- GameClock <= -0.86
+|   |   |   |   |   |   |   |--- Quarter <= -0.89
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Quarter >  -0.89
+|   |   |   |   |   |   |   |   |--- VisitorTeamAbbr <= 0.26
+|   |   |   |   |   |   |   |   |   |--- class: 6
+|   |   |   |   |   |   |   |   |--- VisitorTeamAbbr >  0.26
+|   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |--- GameClock >  -0.86
+|   |   |   |   |   |   |   |--- Location <= 0.68
+|   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |--- Location >  0.68
+|   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |--- VisitorTeamAbbr >  1.55
+|   |   |   |   |   |   |--- HomeTeamAbbr <= -0.53
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- HomeTeamAbbr >  -0.53
+|   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |--- HomeScoreBeforePlay >  0.79
+|   |   |   |   |   |--- OffensePersonnel <= 0.19
+|   |   |   |   |   |   |--- class: 5
+|   |   |   |   |   |--- OffensePersonnel >  0.19
+|   |   |   |   |   |   |--- class: 2
+|   |   |   |--- WindDirection >  1.13
+|   |   |   |   |--- VisitorTeamAbbr <= 0.10
+|   |   |   |   |   |--- PlayDirection <= 0.01
+|   |   |   |   |   |   |--- class: 8
+|   |   |   |   |   |--- PlayDirection >  0.01
+|   |   |   |   |   |   |--- DefendersInTheBox <= 0.62
+|   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |   |   |--- DefendersInTheBox >  0.62
+|   |   |   |   |   |   |   |--- NflId <= 0.16
+|   |   |   |   |   |   |   |   |--- Temperature <= 0.23
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Temperature >  0.23
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- NflId >  0.16
+|   |   |   |   |   |   |   |   |--- Week <= -0.92
+|   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |--- Week >  -0.92
+|   |   |   |   |   |   |   |   |   |--- class: 15
+|   |   |   |   |--- VisitorTeamAbbr >  0.10
+|   |   |   |   |   |--- class: 12
+|--- YardLine >  -2.05
+|   |--- YardLine <= -1.90
+|   |   |--- Distance <= -1.52
+|   |   |   |--- HomeTeamAbbr <= 1.20
+|   |   |   |   |--- PlayerBirthDate <= -0.21
+|   |   |   |   |   |--- Humidity <= 1.28
+|   |   |   |   |   |   |--- VisitorTeamAbbr <= -1.52
+|   |   |   |   |   |   |   |--- PossessionTeam <= 1.03
+|   |   |   |   |   |   |   |   |--- PlayerWeight <= 1.65
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- PlayerWeight >  1.65
+|   |   |   |   |   |   |   |   |   |--- class: -6
+|   |   |   |   |   |   |   |--- PossessionTeam >  1.03
+|   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |   |--- VisitorTeamAbbr >  -1.52
+|   |   |   |   |   |   |   |--- VisitorTeamAbbr <= -0.55
+|   |   |   |   |   |   |   |   |--- FieldPosition <= -0.29
+|   |   |   |   |   |   |   |   |   |--- Location <= 0.12
+|   |   |   |   |   |   |   |   |   |   |--- Temperature <= -0.40
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- Temperature >  -0.40
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- Location >  0.12
+|   |   |   |   |   |   |   |   |   |   |--- VisitorTeamAbbr <= -1.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- VisitorTeamAbbr >  -1.30
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- FieldPosition >  -0.29
+|   |   |   |   |   |   |   |   |   |--- WindDirection <= -1.12
+|   |   |   |   |   |   |   |   |   |   |--- Down <= 1.45
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- Down >  1.45
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |   |--- WindDirection >  -1.12
+|   |   |   |   |   |   |   |   |   |   |--- PlayerCollegeName <= -1.18
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- PlayerCollegeName >  -1.18
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- VisitorTeamAbbr >  -0.55
+|   |   |   |   |   |   |   |   |--- WindDirection <= 0.24
+|   |   |   |   |   |   |   |   |   |--- YardLine <= -1.98
+|   |   |   |   |   |   |   |   |   |   |--- WindSpeed <= -0.49
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- WindSpeed >  -0.49
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |--- YardLine >  -1.98
+|   |   |   |   |   |   |   |   |   |   |--- Location <= -0.38
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- Location >  -0.38
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- WindDirection >  0.24
+|   |   |   |   |   |   |   |   |   |--- Temperature <= 0.93
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition <= -0.03
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition >  -0.03
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- Temperature >  0.93
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- Humidity >  1.28
+|   |   |   |   |   |   |--- PlayerWeight <= -0.34
+|   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- PlayerWeight >  -0.34
+|   |   |   |   |   |   |   |--- GameClock <= -1.52
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- GameClock >  -1.52
+|   |   |   |   |   |   |   |   |--- OffensePersonnel <= 7.70
+|   |   |   |   |   |   |   |   |   |--- Week <= -1.23
+|   |   |   |   |   |   |   |   |   |   |--- GameClock <= -1.11
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- GameClock >  -1.11
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- Week >  -1.23
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- OffensePersonnel >  7.70
+|   |   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |--- PlayerBirthDate >  -0.21
+|   |   |   |   |   |--- DefensePersonnel <= 0.86
+|   |   |   |   |   |   |--- PossessionTeam <= 0.32
+|   |   |   |   |   |   |   |--- NflId <= 0.20
+|   |   |   |   |   |   |   |   |--- Down <= 1.45
+|   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |--- Down >  1.45
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- NflId >  0.20
+|   |   |   |   |   |   |   |   |--- GameWeather <= 0.34
+|   |   |   |   |   |   |   |   |   |--- DefendersInTheBox <= 1.25
+|   |   |   |   |   |   |   |   |   |   |--- GameClock <= 0.23
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- GameClock >  0.23
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- DefendersInTheBox >  1.25
+|   |   |   |   |   |   |   |   |   |   |--- VisitorTeamAbbr <= -0.82
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- VisitorTeamAbbr >  -0.82
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- GameWeather >  0.34
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- PossessionTeam >  0.32
+|   |   |   |   |   |   |   |--- Week <= 1.48
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Week >  1.48
+|   |   |   |   |   |   |   |   |--- PlayerCollegeName <= 0.79
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- PlayerCollegeName >  0.79
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- DefensePersonnel >  0.86
+|   |   |   |   |   |   |--- Stadium <= 0.10
+|   |   |   |   |   |   |   |--- PlayerWeight <= 2.10
+|   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |--- PlayerWeight >  2.10
+|   |   |   |   |   |   |   |   |--- Location <= -1.29
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- Location >  -1.29
+|   |   |   |   |   |   |   |   |   |--- Quarter <= -0.01
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- Quarter >  -0.01
+|   |   |   |   |   |   |   |   |   |   |--- class: -3
+|   |   |   |   |   |   |--- Stadium >  0.10
+|   |   |   |   |   |   |   |--- VisitorScoreBeforePlay <= -0.03
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- VisitorScoreBeforePlay >  -0.03
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |--- HomeTeamAbbr >  1.20
+|   |   |   |   |--- Temperature <= 1.08
+|   |   |   |   |   |--- PlayerBirthDate <= 1.58
+|   |   |   |   |   |   |--- FieldPosition <= 1.36
+|   |   |   |   |   |   |   |--- PlayerWeight <= -1.39
+|   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |   |   |--- PlayerWeight >  -1.39
+|   |   |   |   |   |   |   |   |--- PlayerWeight <= 2.36
+|   |   |   |   |   |   |   |   |   |--- PlayerBirthDate <= -0.70
+|   |   |   |   |   |   |   |   |   |   |--- PlayerWeight <= -0.23
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- PlayerWeight >  -0.23
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- PlayerBirthDate >  -0.70
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- PlayerWeight >  2.36
+|   |   |   |   |   |   |   |   |   |--- class: -3
+|   |   |   |   |   |   |--- FieldPosition >  1.36
+|   |   |   |   |   |   |   |--- OffenseFormation <= -0.27
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- OffenseFormation >  -0.27
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- PlayerBirthDate >  1.58
+|   |   |   |   |   |   |--- PlayerCollegeName <= 1.02
+|   |   |   |   |   |   |   |--- DefensePersonnel <= 0.70
+|   |   |   |   |   |   |   |   |--- DefendersInTheBox <= -0.62
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- DefendersInTheBox >  -0.62
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- DefensePersonnel >  0.70
+|   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |--- PlayerCollegeName >  1.02
+|   |   |   |   |   |   |   |--- Location <= 1.45
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Location >  1.45
+|   |   |   |   |   |   |   |   |--- Week <= -1.02
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Week >  -1.02
+|   |   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |--- Temperature >  1.08
+|   |   |   |   |   |--- class: 2
+|   |   |--- Distance >  -1.52
+|   |   |   |--- PlayerWeight <= -0.60
+|   |   |   |   |--- GameClock <= 0.72
+|   |   |   |   |   |--- Location <= -1.26
+|   |   |   |   |   |   |--- VisitorScoreBeforePlay <= -0.08
+|   |   |   |   |   |   |   |--- class: 6
+|   |   |   |   |   |   |--- VisitorScoreBeforePlay >  -0.08
+|   |   |   |   |   |   |   |--- class: 7
+|   |   |   |   |   |--- Location >  -1.26
+|   |   |   |   |   |   |--- Week <= -1.02
+|   |   |   |   |   |   |   |--- DefendersInTheBox <= 1.25
+|   |   |   |   |   |   |   |   |--- WindSpeed <= -0.24
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- WindSpeed >  -0.24
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- DefendersInTheBox >  1.25
+|   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |--- Week >  -1.02
+|   |   |   |   |   |   |   |--- Stadium <= 1.37
+|   |   |   |   |   |   |   |   |--- Location <= -1.01
+|   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |--- Location >  -1.01
+|   |   |   |   |   |   |   |   |   |--- GameClock <= -1.27
+|   |   |   |   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |   |   |   |   |   |--- GameClock >  -1.27
+|   |   |   |   |   |   |   |   |   |   |--- DefendersInTheBox <= 3.42
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- DefendersInTheBox >  3.42
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 19
+|   |   |   |   |   |   |   |--- Stadium >  1.37
+|   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |--- GameClock >  0.72
+|   |   |   |   |   |--- Team <= 0.01
+|   |   |   |   |   |   |--- NflId <= 0.23
+|   |   |   |   |   |   |   |--- VisitorScoreBeforePlay <= -0.71
+|   |   |   |   |   |   |   |   |--- DefendersInTheBox <= -0.31
+|   |   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |   |   |   |--- DefendersInTheBox >  -0.31
+|   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |--- VisitorScoreBeforePlay >  -0.71
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- NflId >  0.23
+|   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |--- Team >  0.01
+|   |   |   |   |   |   |--- Distance <= -0.48
+|   |   |   |   |   |   |   |--- GameClock <= 1.09
+|   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- GameClock >  1.09
+|   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |--- Distance >  -0.48
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |--- PlayerWeight >  -0.60
+|   |   |   |   |--- VisitorTeamAbbr <= -1.20
+|   |   |   |   |   |--- Location <= 0.29
+|   |   |   |   |   |   |--- GameWeather <= -0.58
+|   |   |   |   |   |   |   |--- Location <= -0.34
+|   |   |   |   |   |   |   |   |--- WindDirection <= -0.78
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- WindDirection >  -0.78
+|   |   |   |   |   |   |   |   |   |--- Week <= -0.08
+|   |   |   |   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |   |   |   |   |   |--- Week >  -0.08
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- Location >  -0.34
+|   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |--- GameWeather >  -0.58
+|   |   |   |   |   |   |   |--- Stadium <= 0.14
+|   |   |   |   |   |   |   |   |--- StadiumType <= 0.51
+|   |   |   |   |   |   |   |   |   |--- Quarter <= 0.43
+|   |   |   |   |   |   |   |   |   |   |--- Humidity <= 0.07
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |   |   |--- Humidity >  0.07
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Quarter >  0.43
+|   |   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |--- StadiumType >  0.51
+|   |   |   |   |   |   |   |   |   |--- Team <= 0.01
+|   |   |   |   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |   |   |   |   |   |--- Team >  0.01
+|   |   |   |   |   |   |   |   |   |   |--- class: 6
+|   |   |   |   |   |   |   |--- Stadium >  0.14
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |--- Location >  0.29
+|   |   |   |   |   |   |--- Week <= 1.37
+|   |   |   |   |   |   |   |--- PossessionTeam <= -1.31
+|   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |   |   |--- PossessionTeam >  -1.31
+|   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |--- Week >  1.37
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |--- VisitorTeamAbbr >  -1.20
+|   |   |   |   |   |--- PlayerCollegeName <= 0.24
+|   |   |   |   |   |   |--- Distance <= 0.05
+|   |   |   |   |   |   |   |--- Humidity <= -0.32
+|   |   |   |   |   |   |   |   |--- WindDirection <= 0.88
+|   |   |   |   |   |   |   |   |   |--- PossessionTeam <= 0.49
+|   |   |   |   |   |   |   |   |   |   |--- DefendersInTheBox <= 1.87
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- DefendersInTheBox >  1.87
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |   |--- PossessionTeam >  0.49
+|   |   |   |   |   |   |   |   |   |   |--- VisitorTeamAbbr <= -0.87
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 9
+|   |   |   |   |   |   |   |   |   |   |--- VisitorTeamAbbr >  -0.87
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- WindDirection >  0.88
+|   |   |   |   |   |   |   |   |   |--- NflId <= 0.23
+|   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |   |--- NflId >  0.23
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Humidity >  -0.32
+|   |   |   |   |   |   |   |   |--- PlayDirection <= 0.01
+|   |   |   |   |   |   |   |   |   |--- OffenseFormation <= 1.07
+|   |   |   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay <= 0.55
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay >  0.55
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- OffenseFormation >  1.07
+|   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |--- PlayDirection >  0.01
+|   |   |   |   |   |   |   |   |   |--- Temperature <= -0.50
+|   |   |   |   |   |   |   |   |   |   |--- PossessionTeam <= 1.30
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- PossessionTeam >  1.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- Temperature >  -0.50
+|   |   |   |   |   |   |   |   |   |   |--- PlayerCollegeName <= -0.95
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- PlayerCollegeName >  -0.95
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |--- Distance >  0.05
+|   |   |   |   |   |   |   |--- Humidity <= -0.82
+|   |   |   |   |   |   |   |   |--- VisitorTeamAbbr <= -0.01
+|   |   |   |   |   |   |   |   |   |--- GameWeather <= -0.58
+|   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |   |--- GameWeather >  -0.58
+|   |   |   |   |   |   |   |   |   |   |--- Turf <= -1.02
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Turf >  -1.02
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- VisitorTeamAbbr >  -0.01
+|   |   |   |   |   |   |   |   |   |--- GameClock <= -0.94
+|   |   |   |   |   |   |   |   |   |   |--- Quarter <= -0.45
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |   |   |--- Quarter >  -0.45
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 6
+|   |   |   |   |   |   |   |   |   |--- GameClock >  -0.94
+|   |   |   |   |   |   |   |   |   |   |--- PlayerCollegeName <= -0.02
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- PlayerCollegeName >  -0.02
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- Humidity >  -0.82
+|   |   |   |   |   |   |   |   |--- Temperature <= 0.15
+|   |   |   |   |   |   |   |   |   |--- Humidity <= -0.70
+|   |   |   |   |   |   |   |   |   |   |--- class: 6
+|   |   |   |   |   |   |   |   |   |--- Humidity >  -0.70
+|   |   |   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay <= 0.04
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay >  0.04
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |--- Temperature >  0.15
+|   |   |   |   |   |   |   |   |   |--- Humidity <= -0.37
+|   |   |   |   |   |   |   |   |   |   |--- DefendersInTheBox <= 0.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- DefendersInTheBox >  0.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |   |--- Humidity >  -0.37
+|   |   |   |   |   |   |   |   |   |   |--- Humidity <= 1.07
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- Humidity >  1.07
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |--- PlayerCollegeName >  0.24
+|   |   |   |   |   |   |--- PlayerWeight <= 1.12
+|   |   |   |   |   |   |   |--- GameWeather <= 0.80
+|   |   |   |   |   |   |   |   |--- Temperature <= -1.16
+|   |   |   |   |   |   |   |   |   |--- WindDirection <= -0.10
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- WindDirection >  -0.10
+|   |   |   |   |   |   |   |   |   |   |--- Season <= 0.17
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- Season >  0.17
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 8
+|   |   |   |   |   |   |   |   |--- Temperature >  -1.16
+|   |   |   |   |   |   |   |   |   |--- DefensePersonnel <= 0.54
+|   |   |   |   |   |   |   |   |   |   |--- Turf <= 0.16
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Turf >  0.16
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- DefensePersonnel >  0.54
+|   |   |   |   |   |   |   |   |   |   |--- NflId <= 0.23
+|   |   |   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |   |   |--- NflId >  0.23
+|   |   |   |   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |   |   |--- GameWeather >  0.80
+|   |   |   |   |   |   |   |   |--- FieldPosition <= -0.72
+|   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |--- FieldPosition >  -0.72
+|   |   |   |   |   |   |   |   |   |--- Week <= -0.19
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Week >  -0.19
+|   |   |   |   |   |   |   |   |   |   |--- OffenseFormation <= 0.74
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- OffenseFormation >  0.74
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |--- PlayerWeight >  1.12
+|   |   |   |   |   |   |   |--- GameClock <= -0.68
+|   |   |   |   |   |   |   |   |--- Location <= -0.02
+|   |   |   |   |   |   |   |   |   |--- YardLine <= -1.98
+|   |   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |   |--- YardLine >  -1.98
+|   |   |   |   |   |   |   |   |   |   |--- DefensePersonnel <= -0.24
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- DefensePersonnel >  -0.24
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- Location >  -0.02
+|   |   |   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |   |   |   |--- GameClock >  -0.68
+|   |   |   |   |   |   |   |   |--- HomeTeamAbbr <= 1.47
+|   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |--- HomeTeamAbbr >  1.47
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |--- YardLine >  -1.90
+|   |   |--- Distance <= -1.79
+|   |   |   |--- Down <= 1.45
+|   |   |   |   |--- PossessionTeam <= -0.76
+|   |   |   |   |   |--- PlayerWeight <= 0.56
+|   |   |   |   |   |   |--- OffensePersonnel <= -0.38
+|   |   |   |   |   |   |   |--- WindDirection <= 1.47
+|   |   |   |   |   |   |   |   |--- GameWeather <= -0.76
+|   |   |   |   |   |   |   |   |   |--- WindSpeed <= -0.43
+|   |   |   |   |   |   |   |   |   |   |--- class: 7
+|   |   |   |   |   |   |   |   |   |--- WindSpeed >  -0.43
+|   |   |   |   |   |   |   |   |   |   |--- class: 16
+|   |   |   |   |   |   |   |   |--- GameWeather >  -0.76
+|   |   |   |   |   |   |   |   |   |--- Stadium <= 1.23
+|   |   |   |   |   |   |   |   |   |   |--- NflId <= 0.19
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- NflId >  0.19
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |--- Stadium >  1.23
+|   |   |   |   |   |   |   |   |   |   |--- class: 7
+|   |   |   |   |   |   |   |--- WindDirection >  1.47
+|   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay <= -0.13
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay >  -0.13
+|   |   |   |   |   |   |   |   |   |--- class: 5
+|   |   |   |   |   |   |--- OffensePersonnel >  -0.38
+|   |   |   |   |   |   |   |--- GameClock <= 1.49
+|   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay <= 2.39
+|   |   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay <= 1.73
+|   |   |   |   |   |   |   |   |   |   |--- Humidity <= -1.20
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- Humidity >  -1.20
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay >  1.73
+|   |   |   |   |   |   |   |   |   |   |--- Location <= 0.15
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 5
+|   |   |   |   |   |   |   |   |   |   |--- Location >  0.15
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay >  2.39
+|   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |--- GameClock >  1.49
+|   |   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |   |--- PlayerWeight >  0.56
+|   |   |   |   |   |   |--- StadiumType <= 0.42
+|   |   |   |   |   |   |   |--- FieldPosition <= -0.40
+|   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay <= 0.60
+|   |   |   |   |   |   |   |   |   |--- NflId <= 0.21
+|   |   |   |   |   |   |   |   |   |   |--- Turf <= -0.78
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 5
+|   |   |   |   |   |   |   |   |   |   |--- Turf >  -0.78
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- NflId >  0.21
+|   |   |   |   |   |   |   |   |   |   |--- StadiumType <= -0.13
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- StadiumType >  -0.13
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 14
+|   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay >  0.60
+|   |   |   |   |   |   |   |   |   |--- YardLine <= -1.06
+|   |   |   |   |   |   |   |   |   |   |--- class: 6
+|   |   |   |   |   |   |   |   |   |--- YardLine >  -1.06
+|   |   |   |   |   |   |   |   |   |   |--- Turf <= 1.22
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 29
+|   |   |   |   |   |   |   |   |   |   |--- Turf >  1.22
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- FieldPosition >  -0.40
+|   |   |   |   |   |   |   |   |--- VisitorTeamAbbr <= -1.14
+|   |   |   |   |   |   |   |   |   |--- YardLine <= -0.52
+|   |   |   |   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |   |   |   |   |   |--- YardLine >  -0.52
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- VisitorTeamAbbr >  -1.14
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- StadiumType >  0.42
+|   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |--- PossessionTeam >  -0.76
+|   |   |   |   |   |--- PlayerBirthDate <= -0.25
+|   |   |   |   |   |   |--- Humidity <= 0.30
+|   |   |   |   |   |   |   |--- OffensePersonnel <= -0.38
+|   |   |   |   |   |   |   |   |--- PossessionTeam <= -0.22
+|   |   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay <= -0.65
+|   |   |   |   |   |   |   |   |   |   |--- PlayerBirthDate <= -0.75
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |   |   |--- PlayerBirthDate >  -0.75
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay >  -0.65
+|   |   |   |   |   |   |   |   |   |   |--- GameClock <= 0.68
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- GameClock >  0.68
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |--- PossessionTeam >  -0.22
+|   |   |   |   |   |   |   |   |   |--- GameClock <= 0.57
+|   |   |   |   |   |   |   |   |   |   |--- Temperature <= 0.95
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- Temperature >  0.95
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- GameClock >  0.57
+|   |   |   |   |   |   |   |   |   |   |--- WindDirection <= 0.96
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- WindDirection >  0.96
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- OffensePersonnel >  -0.38
+|   |   |   |   |   |   |   |   |--- PlayerBirthDate <= -0.75
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- PlayerBirthDate >  -0.75
+|   |   |   |   |   |   |   |   |   |--- GameWeather <= 0.70
+|   |   |   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay <= 1.38
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
+|   |   |   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay >  1.38
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- GameWeather >  0.70
+|   |   |   |   |   |   |   |   |   |   |--- VisitorTeamAbbr <= -0.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- VisitorTeamAbbr >  -0.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |--- Humidity >  0.30
+|   |   |   |   |   |   |   |--- HomeScoreBeforePlay <= -0.65
+|   |   |   |   |   |   |   |   |--- Team <= 0.01
+|   |   |   |   |   |   |   |   |   |--- GameClock <= 0.52
+|   |   |   |   |   |   |   |   |   |   |--- GameWeather <= -0.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- GameWeather >  -0.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- GameClock >  0.52
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition <= -0.03
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition >  -0.03
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- Team >  0.01
+|   |   |   |   |   |   |   |   |   |--- OffensePersonnel <= -0.29
+|   |   |   |   |   |   |   |   |   |   |--- Temperature <= 0.38
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Temperature >  0.38
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- OffensePersonnel >  -0.29
+|   |   |   |   |   |   |   |   |   |   |--- Temperature <= 0.90
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |   |   |--- Temperature >  0.90
+|   |   |   |   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |   |   |--- HomeScoreBeforePlay >  -0.65
+|   |   |   |   |   |   |   |   |--- YardLine <= -1.29
+|   |   |   |   |   |   |   |   |   |--- HomeTeamAbbr <= -0.20
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- HomeTeamAbbr >  -0.20
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- YardLine >  -1.29
+|   |   |   |   |   |   |   |   |   |--- WindDirection <= 2.91
+|   |   |   |   |   |   |   |   |   |   |--- GameClock <= 0.77
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- GameClock >  0.77
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- WindDirection >  2.91
+|   |   |   |   |   |   |   |   |   |   |--- Location <= -0.76
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- Location >  -0.76
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 5
+|   |   |   |   |   |--- PlayerBirthDate >  -0.25
+|   |   |   |   |   |   |--- PlayerBirthDate <= 2.12
+|   |   |   |   |   |   |   |--- VisitorTeamAbbr <= 1.39
+|   |   |   |   |   |   |   |   |--- WindSpeed <= 0.39
+|   |   |   |   |   |   |   |   |   |--- WindDirection <= -0.78
+|   |   |   |   |   |   |   |   |   |   |--- Turf <= 0.52
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- Turf >  0.52
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- WindDirection >  -0.78
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition <= 0.88
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 14
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition >  0.88
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |--- WindSpeed >  0.39
+|   |   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay <= 0.60
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition <= 1.25
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition >  1.25
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay >  0.60
+|   |   |   |   |   |   |   |   |   |   |--- NflId <= 0.21
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- NflId >  0.21
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- VisitorTeamAbbr >  1.39
+|   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay <= -0.15
+|   |   |   |   |   |   |   |   |   |--- WindDirection <= 0.96
+|   |   |   |   |   |   |   |   |   |   |--- Quarter <= -0.89
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Quarter >  -0.89
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- WindDirection >  0.96
+|   |   |   |   |   |   |   |   |   |   |--- YardLine <= -0.33
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 10
+|   |   |   |   |   |   |   |   |   |   |--- YardLine >  -0.33
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay >  -0.15
+|   |   |   |   |   |   |   |   |   |--- Temperature <= -1.21
+|   |   |   |   |   |   |   |   |   |   |--- HomeTeamAbbr <= -0.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |   |   |   |   |   |   |--- HomeTeamAbbr >  -0.20
+|   |   |   |   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |   |   |   |   |--- Temperature >  -1.21
+|   |   |   |   |   |   |   |   |   |   |--- PlayerCollegeName <= 0.11
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- PlayerCollegeName >  0.11
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |--- PlayerBirthDate >  2.12
+|   |   |   |   |   |   |   |--- GameClock <= 0.16
+|   |   |   |   |   |   |   |   |--- Quarter <= -0.89
+|   |   |   |   |   |   |   |   |   |--- YardLine <= 0.17
+|   |   |   |   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |   |   |   |   |   |--- YardLine >  0.17
+|   |   |   |   |   |   |   |   |   |   |--- class: 10
+|   |   |   |   |   |   |   |   |--- Quarter >  -0.89
+|   |   |   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |   |   |   |--- GameClock >  0.16
+|   |   |   |   |   |   |   |   |--- Temperature <= -1.21
+|   |   |   |   |   |   |   |   |   |--- class: 5
+|   |   |   |   |   |   |   |   |--- Temperature >  -1.21
+|   |   |   |   |   |   |   |   |   |--- Temperature <= -1.01
+|   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |   |--- Temperature >  -1.01
+|   |   |   |   |   |   |   |   |   |   |--- class: 6
+|   |   |   |--- Down >  1.45
+|   |   |   |   |--- DefensePersonnel <= -0.09
+|   |   |   |   |   |--- PlayerBirthDate <= -1.06
+|   |   |   |   |   |   |--- Temperature <= -0.30
+|   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |--- Temperature >  -0.30
+|   |   |   |   |   |   |   |--- PlayDirection <= 0.01
+|   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |--- PlayDirection >  0.01
+|   |   |   |   |   |   |   |   |--- DefendersInTheBox <= 1.25
+|   |   |   |   |   |   |   |   |   |--- class: 6
+|   |   |   |   |   |   |   |   |--- DefendersInTheBox >  1.25
+|   |   |   |   |   |   |   |   |   |--- OffenseFormation <= 0.74
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- OffenseFormation >  0.74
+|   |   |   |   |   |   |   |   |   |   |--- class: 8
+|   |   |   |   |   |--- PlayerBirthDate >  -1.06
+|   |   |   |   |   |   |--- HomeTeamAbbr <= 0.44
+|   |   |   |   |   |   |   |--- FieldPosition <= -0.93
+|   |   |   |   |   |   |   |   |--- GameClock <= -1.28
+|   |   |   |   |   |   |   |   |   |--- PlayerWeight <= 0.45
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- PlayerWeight >  0.45
+|   |   |   |   |   |   |   |   |   |   |--- Humidity <= -0.07
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |   |   |--- Humidity >  -0.07
+|   |   |   |   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |   |   |   |--- GameClock >  -1.28
+|   |   |   |   |   |   |   |   |   |--- Humidity <= 0.80
+|   |   |   |   |   |   |   |   |   |   |--- Stadium <= 2.10
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- Stadium >  2.10
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |--- Humidity >  0.80
+|   |   |   |   |   |   |   |   |   |   |--- WindSpeed <= -0.49
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- WindSpeed >  -0.49
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- FieldPosition >  -0.93
+|   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay <= -0.87
+|   |   |   |   |   |   |   |   |   |--- PlayerCollegeName <= -1.18
+|   |   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |   |--- PlayerCollegeName >  -1.18
+|   |   |   |   |   |   |   |   |   |   |--- Week <= 0.23
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- Week >  0.23
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay >  -0.87
+|   |   |   |   |   |   |   |   |   |--- PlayerHeight <= -0.61
+|   |   |   |   |   |   |   |   |   |   |--- GameClock <= -1.10
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- GameClock >  -1.10
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |--- PlayerHeight >  -0.61
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition <= 0.77
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition >  0.77
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |--- HomeTeamAbbr >  0.44
+|   |   |   |   |   |   |   |--- PlayerWeight <= 0.90
+|   |   |   |   |   |   |   |   |--- Location <= -0.02
+|   |   |   |   |   |   |   |   |   |--- DefendersInTheBox <= 0.62
+|   |   |   |   |   |   |   |   |   |   |--- StadiumType <= 1.62
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- StadiumType >  1.62
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 11
+|   |   |   |   |   |   |   |   |   |--- DefendersInTheBox >  0.62
+|   |   |   |   |   |   |   |   |   |   |--- Temperature <= 0.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- Temperature >  0.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- Location >  -0.02
+|   |   |   |   |   |   |   |   |   |--- GameClock <= -1.39
+|   |   |   |   |   |   |   |   |   |   |--- Humidity <= 1.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- Humidity >  1.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- GameClock >  -1.39
+|   |   |   |   |   |   |   |   |   |   |--- Humidity <= -1.28
+|   |   |   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |   |   |--- Humidity >  -1.28
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |--- PlayerWeight >  0.90
+|   |   |   |   |   |   |   |   |--- FieldPosition <= 1.09
+|   |   |   |   |   |   |   |   |   |--- Down <= 2.93
+|   |   |   |   |   |   |   |   |   |   |--- Week <= 1.68
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- Week >  1.68
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 9
+|   |   |   |   |   |   |   |   |   |--- Down >  2.93
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- FieldPosition >  1.09
+|   |   |   |   |   |   |   |   |   |--- NflId <= -1.95
+|   |   |   |   |   |   |   |   |   |   |--- class: 15
+|   |   |   |   |   |   |   |   |   |--- NflId >  -1.95
+|   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |--- DefensePersonnel >  -0.09
+|   |   |   |   |   |--- GameWeather <= 1.94
+|   |   |   |   |   |   |--- PlayerHeight <= -0.20
+|   |   |   |   |   |   |   |--- Position <= 3.68
+|   |   |   |   |   |   |   |   |--- VisitorTeamAbbr <= -0.98
+|   |   |   |   |   |   |   |   |   |--- PlayerWeight <= 0.49
+|   |   |   |   |   |   |   |   |   |   |--- Week <= 0.96
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- Week >  0.96
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- PlayerWeight >  0.49
+|   |   |   |   |   |   |   |   |   |   |--- StadiumType <= -0.41
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- StadiumType >  -0.41
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- VisitorTeamAbbr >  -0.98
+|   |   |   |   |   |   |   |   |   |--- WindDirection <= -1.12
+|   |   |   |   |   |   |   |   |   |   |--- GameClock <= -0.23
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- GameClock >  -0.23
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 5
+|   |   |   |   |   |   |   |   |   |--- WindDirection >  -1.12
+|   |   |   |   |   |   |   |   |   |   |--- PlayerCollegeName <= -0.55
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- PlayerCollegeName >  -0.55
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |--- Position >  3.68
+|   |   |   |   |   |   |   |   |--- Stadium <= 0.10
+|   |   |   |   |   |   |   |   |   |--- StadiumType <= 0.33
+|   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |   |--- StadiumType >  0.33
+|   |   |   |   |   |   |   |   |   |   |--- class: 27
+|   |   |   |   |   |   |   |   |--- Stadium >  0.10
+|   |   |   |   |   |   |   |   |   |--- NflId <= 0.18
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- NflId >  0.18
+|   |   |   |   |   |   |   |   |   |   |--- Humidity <= -0.57
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 9
+|   |   |   |   |   |   |   |   |   |   |--- Humidity >  -0.57
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 13
+|   |   |   |   |   |   |--- PlayerHeight >  -0.20
+|   |   |   |   |   |   |   |--- WindDirection <= -0.18
+|   |   |   |   |   |   |   |   |--- OffenseFormation <= -0.61
+|   |   |   |   |   |   |   |   |   |--- PossessionTeam <= 0.54
+|   |   |   |   |   |   |   |   |   |   |--- Temperature <= -0.85
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- Temperature >  -0.85
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- PossessionTeam >  0.54
+|   |   |   |   |   |   |   |   |   |   |--- Temperature <= -0.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- Temperature >  -0.05
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |--- OffenseFormation >  -0.61
+|   |   |   |   |   |   |   |   |   |--- FieldPosition <= 1.52
+|   |   |   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay <= 0.13
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay >  0.13
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- FieldPosition >  1.52
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- WindDirection >  -0.18
+|   |   |   |   |   |   |   |   |--- PlayerCollegeName <= -0.92
+|   |   |   |   |   |   |   |   |   |--- Temperature <= 0.93
+|   |   |   |   |   |   |   |   |   |   |--- DefensePersonnel <= 3.23
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- DefensePersonnel >  3.23
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 15
+|   |   |   |   |   |   |   |   |   |--- Temperature >  0.93
+|   |   |   |   |   |   |   |   |   |   |--- WindSpeed <= 1.09
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- WindSpeed >  1.09
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 25
+|   |   |   |   |   |   |   |   |--- PlayerCollegeName >  -0.92
+|   |   |   |   |   |   |   |   |   |--- WindSpeed <= 0.77
+|   |   |   |   |   |   |   |   |   |   |--- Turf <= 2.52
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- Turf >  2.52
+|   |   |   |   |   |   |   |   |   |   |   |--- class: -2
+|   |   |   |   |   |   |   |   |   |--- WindSpeed >  0.77
+|   |   |   |   |   |   |   |   |   |   |--- PlayerWeight <= 0.49
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- PlayerWeight >  0.49
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |--- GameWeather >  1.94
+|   |   |   |   |   |   |--- FieldPosition <= -1.14
+|   |   |   |   |   |   |   |--- Week <= -0.50
+|   |   |   |   |   |   |   |   |--- PlayerCollegeName <= -0.31
+|   |   |   |   |   |   |   |   |   |--- class: 12
+|   |   |   |   |   |   |   |   |--- PlayerCollegeName >  -0.31
+|   |   |   |   |   |   |   |   |   |--- WindDirection <= 1.00
+|   |   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |   |--- WindDirection >  1.00
+|   |   |   |   |   |   |   |   |   |   |--- class: -3
+|   |   |   |   |   |   |   |--- Week >  -0.50
+|   |   |   |   |   |   |   |   |--- GameClock <= 1.23
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- GameClock >  1.23
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- FieldPosition >  -1.14
+|   |   |   |   |   |   |   |--- VisitorScoreBeforePlay <= 0.13
+|   |   |   |   |   |   |   |   |--- Humidity <= -1.16
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- Humidity >  -1.16
+|   |   |   |   |   |   |   |   |   |--- GameWeather <= 3.51
+|   |   |   |   |   |   |   |   |   |   |--- Humidity <= 1.84
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- Humidity >  1.84
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 15
+|   |   |   |   |   |   |   |   |   |--- GameWeather >  3.51
+|   |   |   |   |   |   |   |   |   |   |--- class: 7
+|   |   |   |   |   |   |   |--- VisitorScoreBeforePlay >  0.13
+|   |   |   |   |   |   |   |   |--- NflId <= 0.23
+|   |   |   |   |   |   |   |   |   |--- OffensePersonnel <= 0.19
+|   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |--- OffensePersonnel >  0.19
+|   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- NflId >  0.23
+|   |   |   |   |   |   |   |   |   |--- Position <= 2.11
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition <= -0.93
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 6
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition >  -0.93
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- Position >  2.11
+|   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |--- Distance >  -1.79
+|   |   |   |--- Position <= 5.24
+|   |   |   |   |--- DefendersInTheBox <= -0.62
+|   |   |   |   |   |--- Distance <= -1.52
+|   |   |   |   |   |   |--- StadiumType <= 0.51
+|   |   |   |   |   |   |   |--- WindDirection <= -0.78
+|   |   |   |   |   |   |   |   |--- VisitorTeamAbbr <= -1.20
+|   |   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay <= -0.95
+|   |   |   |   |   |   |   |   |   |   |--- PlayerBirthDate <= 1.89
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- PlayerBirthDate >  1.89
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 11
+|   |   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay >  -0.95
+|   |   |   |   |   |   |   |   |   |   |--- PlayerWeight <= -0.94
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 6
+|   |   |   |   |   |   |   |   |   |   |--- PlayerWeight >  -0.94
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- VisitorTeamAbbr >  -1.20
+|   |   |   |   |   |   |   |   |   |--- Location <= -0.94
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition <= -1.25
+|   |   |   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |   |   |--- FieldPosition >  -1.25
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- Location >  -0.94
+|   |   |   |   |   |   |   |   |   |   |--- HomeTeamAbbr <= -0.09
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- HomeTeamAbbr >  -0.09
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |--- WindDirection >  -0.78
+|   |   |   |   |   |   |   |   |--- GameClock <= 0.42
+|   |   |   |   |   |   |   |   |   |--- PlayerCollegeName <= -0.71
+|   |   |   |   |   |   |   |   |   |   |--- HomeTeamAbbr <= 0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- HomeTeamAbbr >  0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- PlayerCollegeName >  -0.71
+|   |   |   |   |   |   |   |   |   |   |--- Humidity <= 1.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 14
+|   |   |   |   |   |   |   |   |   |   |--- Humidity >  1.76
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- GameClock >  0.42
+|   |   |   |   |   |   |   |   |   |--- PlayerWeight <= 0.41
+|   |   |   |   |   |   |   |   |   |   |--- YardLine <= 0.70
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- YardLine >  0.70
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- PlayerWeight >  0.41
+|   |   |   |   |   |   |   |   |   |   |--- YardLine <= 1.24
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- YardLine >  1.24
+|   |   |   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |--- StadiumType >  0.51
+|   |   |   |   |   |   |   |--- GameClock <= -1.42
+|   |   |   |   |   |   |   |   |--- GameClock <= -1.50
+|   |   |   |   |   |   |   |   |   |--- Season <= -0.47
+|   |   |   |   |   |   |   |   |   |   |--- class: 5
+|   |   |   |   |   |   |   |   |   |--- Season >  -0.47
+|   |   |   |   |   |   |   |   |   |   |--- class: 13
+|   |   |   |   |   |   |   |   |--- GameClock >  -1.50
+|   |   |   |   |   |   |   |   |   |--- class: -3
+|   |   |   |   |   |   |   |--- GameClock >  -1.42
+|   |   |   |   |   |   |   |   |--- Turf <= 0.16
+|   |   |   |   |   |   |   |   |   |--- PossessionTeam <= -0.87
+|   |   |   |   |   |   |   |   |   |   |--- GameClock <= -0.03
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- GameClock >  -0.03
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |--- PossessionTeam >  -0.87
+|   |   |   |   |   |   |   |   |   |   |--- NflId <= 0.24
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- NflId >  0.24
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |--- Turf >  0.16
+|   |   |   |   |   |   |   |   |   |--- FieldPosition <= 1.09
+|   |   |   |   |   |   |   |   |   |   |--- NflId <= -2.35
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 7
+|   |   |   |   |   |   |   |   |   |   |--- NflId >  -2.35
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- FieldPosition >  1.09
+|   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |--- Distance >  -1.52
+|   |   |   |   |   |   |--- GameClock <= -1.33
+|   |   |   |   |   |   |   |--- Distance <= 4.11
+|   |   |   |   |   |   |   |   |--- PlayerCollegeName <= -1.12
+|   |   |   |   |   |   |   |   |   |--- Quarter <= -0.01
+|   |   |   |   |   |   |   |   |   |   |--- YardLine <= -1.21
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- YardLine >  -1.21
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- Quarter >  -0.01
+|   |   |   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay <= 0.74
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay >  0.74
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |--- PlayerCollegeName >  -1.12
+|   |   |   |   |   |   |   |   |   |--- PlayerCollegeName <= -1.02
+|   |   |   |   |   |   |   |   |   |   |--- VisitorTeamAbbr <= -1.41
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |   |--- VisitorTeamAbbr >  -1.41
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |--- PlayerCollegeName >  -1.02
+|   |   |   |   |   |   |   |   |   |   |--- GameClock <= -1.51
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 17
+|   |   |   |   |   |   |   |   |   |   |--- GameClock >  -1.51
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 23
+|   |   |   |   |   |   |   |--- Distance >  4.11
+|   |   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |   |   |--- GameClock >  -1.33
+|   |   |   |   |   |   |   |--- Location <= -0.31
+|   |   |   |   |   |   |   |   |--- PlayerHeight <= 0.62
+|   |   |   |   |   |   |   |   |   |--- Distance <= -0.48
+|   |   |   |   |   |   |   |   |   |   |--- WindDirection <= -0.61
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 18
+|   |   |   |   |   |   |   |   |   |   |--- WindDirection >  -0.61
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
+|   |   |   |   |   |   |   |   |   |--- Distance >  -0.48
+|   |   |   |   |   |   |   |   |   |   |--- Distance <= 2.40
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 27
+|   |   |   |   |   |   |   |   |   |   |--- Distance >  2.40
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |--- PlayerHeight >  0.62
+|   |   |   |   |   |   |   |   |   |--- GameClock <= 0.39
+|   |   |   |   |   |   |   |   |   |   |--- YardLine <= -1.37
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- YardLine >  -1.37
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 23
+|   |   |   |   |   |   |   |   |   |--- GameClock >  0.39
+|   |   |   |   |   |   |   |   |   |   |--- PlayerCollegeName <= 1.44
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 19
+|   |   |   |   |   |   |   |   |   |   |--- PlayerCollegeName >  1.44
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |--- Location >  -0.31
+|   |   |   |   |   |   |   |   |--- WindSpeed <= -0.49
+|   |   |   |   |   |   |   |   |   |--- PlayerWeight <= 2.36
+|   |   |   |   |   |   |   |   |   |   |--- YardLine <= 0.62
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 24
+|   |   |   |   |   |   |   |   |   |   |--- YardLine >  0.62
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 18
+|   |   |   |   |   |   |   |   |   |--- PlayerWeight >  2.36
+|   |   |   |   |   |   |   |   |   |   |--- PlayDirection <= 0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |   |   |--- PlayDirection >  0.01
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |--- WindSpeed >  -0.49
+|   |   |   |   |   |   |   |   |   |--- YardLine <= -1.44
+|   |   |   |   |   |   |   |   |   |   |--- PlayerBirthDate <= -0.19
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- PlayerBirthDate >  -0.19
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |--- YardLine >  -1.44
+|   |   |   |   |   |   |   |   |   |   |--- Humidity <= 0.97
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 37
+|   |   |   |   |   |   |   |   |   |   |--- Humidity >  0.97
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 16
+|   |   |   |   |--- DefendersInTheBox >  -0.62
+|   |   |   |   |   |--- Distance <= -1.52
+|   |   |   |   |   |   |--- Location <= 2.41
+|   |   |   |   |   |   |   |--- WindDirection <= -0.86
+|   |   |   |   |   |   |   |   |--- Turf <= 0.16
+|   |   |   |   |   |   |   |   |   |--- NflId <= 0.22
+|   |   |   |   |   |   |   |   |   |   |--- Week <= -1.33
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 5
+|   |   |   |   |   |   |   |   |   |   |--- Week >  -1.33
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- NflId >  0.22
+|   |   |   |   |   |   |   |   |   |   |--- PlayerCollegeName <= -0.06
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |   |   |   |--- PlayerCollegeName >  -0.06
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |--- Turf >  0.16
+|   |   |   |   |   |   |   |   |   |--- WindDirection <= -1.12
+|   |   |   |   |   |   |   |   |   |   |--- OffensePersonnel <= -0.10
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- OffensePersonnel >  -0.10
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 5
+|   |   |   |   |   |   |   |   |   |--- WindDirection >  -1.12
+|   |   |   |   |   |   |   |   |   |   |--- GameWeather <= 0.02
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- GameWeather >  0.02
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 1
+|   |   |   |   |   |   |   |--- WindDirection >  -0.86
+|   |   |   |   |   |   |   |   |--- VisitorTeamAbbr <= 1.50
+|   |   |   |   |   |   |   |   |   |--- YardLine <= -0.83
+|   |   |   |   |   |   |   |   |   |   |--- WindSpeed <= -0.87
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- WindSpeed >  -0.87
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |--- YardLine >  -0.83
+|   |   |   |   |   |   |   |   |   |   |--- Location <= -0.94
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- Location >  -0.94
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 16
+|   |   |   |   |   |   |   |   |--- VisitorTeamAbbr >  1.50
+|   |   |   |   |   |   |   |   |   |--- StadiumType <= 0.51
+|   |   |   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay <= 1.02
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay >  1.02
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- StadiumType >  0.51
+|   |   |   |   |   |   |   |   |   |   |--- Position <= 2.11
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- Position >  2.11
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |   |   |--- Location >  2.41
+|   |   |   |   |   |   |   |--- Team <= 0.01
+|   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |--- Team >  0.01
+|   |   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |   |--- Distance >  -1.52
+|   |   |   |   |   |   |--- Distance <= -1.26
+|   |   |   |   |   |   |   |--- GameClock <= -1.15
+|   |   |   |   |   |   |   |   |--- PlayerCollegeName <= -1.12
+|   |   |   |   |   |   |   |   |   |--- FieldPosition <= -0.72
+|   |   |   |   |   |   |   |   |   |   |--- PlayerWeight <= -0.71
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |   |   |   |   |   |   |--- PlayerWeight >  -0.71
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- FieldPosition >  -0.72
+|   |   |   |   |   |   |   |   |   |   |--- class: 4
+|   |   |   |   |   |   |   |   |--- PlayerCollegeName >  -1.12
+|   |   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay <= 0.13
+|   |   |   |   |   |   |   |   |   |   |--- GameWeather <= 1.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- GameWeather >  1.30
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 5
+|   |   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay >  0.13
+|   |   |   |   |   |   |   |   |   |   |--- NflId <= 0.22
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- NflId >  0.22
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |--- GameClock >  -1.15
+|   |   |   |   |   |   |   |   |--- Humidity <= -1.20
+|   |   |   |   |   |   |   |   |   |--- PlayerBirthDate <= -0.96
+|   |   |   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay <= 0.92
+|   |   |   |   |   |   |   |   |   |   |   |--- class: -1
+|   |   |   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay >  0.92
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- PlayerBirthDate >  -0.96
+|   |   |   |   |   |   |   |   |   |   |--- PlayerWeight <= 1.27
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- PlayerWeight >  1.27
+|   |   |   |   |   |   |   |   |   |   |   |--- class: -5
+|   |   |   |   |   |   |   |   |--- Humidity >  -1.20
+|   |   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay <= 2.22
+|   |   |   |   |   |   |   |   |   |   |--- Position <= 2.11
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 22
+|   |   |   |   |   |   |   |   |   |   |--- Position >  2.11
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay >  2.22
+|   |   |   |   |   |   |   |   |   |   |--- WindSpeed <= -0.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- WindSpeed >  -0.30
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |--- Distance >  -1.26
+|   |   |   |   |   |   |   |--- PlayerWeight <= -0.41
+|   |   |   |   |   |   |   |   |--- DefendersInTheBox <= 3.11
+|   |   |   |   |   |   |   |   |   |--- Position <= 0.54
+|   |   |   |   |   |   |   |   |   |   |--- YardLine <= -1.67
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 15
+|   |   |   |   |   |   |   |   |   |   |--- YardLine >  -1.67
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 35
+|   |   |   |   |   |   |   |   |   |--- Position >  0.54
+|   |   |   |   |   |   |   |   |   |   |--- Location <= -1.29
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 14
+|   |   |   |   |   |   |   |   |   |   |--- Location >  -1.29
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 27
+|   |   |   |   |   |   |   |   |--- DefendersInTheBox >  3.11
+|   |   |   |   |   |   |   |   |   |--- Week <= -1.44
+|   |   |   |   |   |   |   |   |   |   |--- Temperature <= -0.91
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- Temperature >  -0.91
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- Week >  -1.44
+|   |   |   |   |   |   |   |   |   |   |--- GameWeather <= 1.62
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- GameWeather >  1.62
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 6
+|   |   |   |   |   |   |   |--- PlayerWeight >  -0.41
+|   |   |   |   |   |   |   |   |--- DefendersInTheBox <= 1.25
+|   |   |   |   |   |   |   |   |   |--- WindSpeed <= -0.87
+|   |   |   |   |   |   |   |   |   |   |--- Humidity <= 0.40
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 25
+|   |   |   |   |   |   |   |   |   |   |--- Humidity >  0.40
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 16
+|   |   |   |   |   |   |   |   |   |--- WindSpeed >  -0.87
+|   |   |   |   |   |   |   |   |   |   |--- YardLine <= -1.75
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
+|   |   |   |   |   |   |   |   |   |   |--- YardLine >  -1.75
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 33
+|   |   |   |   |   |   |   |   |--- DefendersInTheBox >  1.25
+|   |   |   |   |   |   |   |   |   |--- DefendersInTheBox <= 3.11
+|   |   |   |   |   |   |   |   |   |   |--- Distance <= -0.21
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 23
+|   |   |   |   |   |   |   |   |   |   |--- Distance >  -0.21
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 36
+|   |   |   |   |   |   |   |   |   |--- DefendersInTheBox >  3.11
+|   |   |   |   |   |   |   |   |   |   |--- PlayerWeight <= -0.11
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- PlayerWeight >  -0.11
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
+|   |   |   |--- Position >  5.24
+|   |   |   |   |--- Position <= 6.81
+|   |   |   |   |   |--- OffensePersonnel <= 4.04
+|   |   |   |   |   |   |--- OffenseFormation <= -0.61
+|   |   |   |   |   |   |   |--- Temperature <= -0.18
+|   |   |   |   |   |   |   |   |--- PlayerBirthDate <= 0.20
+|   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |--- PlayerBirthDate >  0.20
+|   |   |   |   |   |   |   |   |   |--- Down <= -0.03
+|   |   |   |   |   |   |   |   |   |   |--- PlayerBirthDate <= 1.89
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |   |   |--- PlayerBirthDate >  1.89
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 28
+|   |   |   |   |   |   |   |   |   |--- Down >  -0.03
+|   |   |   |   |   |   |   |   |   |   |--- WindSpeed <= -0.75
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 13
+|   |   |   |   |   |   |   |   |   |   |--- WindSpeed >  -0.75
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |--- Temperature >  -0.18
+|   |   |   |   |   |   |   |   |--- GameClock <= 0.53
+|   |   |   |   |   |   |   |   |   |--- PlayerCollegeName <= -1.23
+|   |   |   |   |   |   |   |   |   |   |--- class: 8
+|   |   |   |   |   |   |   |   |   |--- PlayerCollegeName >  -1.23
+|   |   |   |   |   |   |   |   |   |   |--- DefensePersonnel <= -0.72
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |   |   |   |   |--- DefensePersonnel >  -0.72
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |   |--- GameClock >  0.53
+|   |   |   |   |   |   |   |   |   |--- Location <= -0.45
+|   |   |   |   |   |   |   |   |   |   |--- class: 7
+|   |   |   |   |   |   |   |   |   |--- Location >  -0.45
+|   |   |   |   |   |   |   |   |   |   |--- class: 29
+|   |   |   |   |   |   |--- OffenseFormation >  -0.61
+|   |   |   |   |   |   |   |--- VisitorTeamAbbr <= -1.20
+|   |   |   |   |   |   |   |   |--- Distance <= -0.48
+|   |   |   |   |   |   |   |   |   |--- class: 3
+|   |   |   |   |   |   |   |   |--- Distance >  -0.48
+|   |   |   |   |   |   |   |   |   |--- class: -5
+|   |   |   |   |   |   |   |--- VisitorTeamAbbr >  -1.20
+|   |   |   |   |   |   |   |   |--- FieldPosition <= -1.68
+|   |   |   |   |   |   |   |   |   |--- class: 20
+|   |   |   |   |   |   |   |   |--- FieldPosition >  -1.68
+|   |   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |--- OffensePersonnel >  4.04
+|   |   |   |   |   |   |--- WindSpeed <= -0.11
+|   |   |   |   |   |   |   |--- class: 2
+|   |   |   |   |   |   |--- WindSpeed >  -0.11
+|   |   |   |   |   |   |   |--- YardLine <= -0.94
+|   |   |   |   |   |   |   |   |--- class: 0
+|   |   |   |   |   |   |   |--- YardLine >  -0.94
+|   |   |   |   |   |   |   |   |--- class: 11
+|   |   |   |   |--- Position >  6.81
+|   |   |   |   |   |--- HomeScoreBeforePlay <= 0.74
+|   |   |   |   |   |   |--- OffensePersonnel <= 6.35
+|   |   |   |   |   |   |   |--- GameClock <= -0.32
+|   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay <= 0.02
+|   |   |   |   |   |   |   |   |   |--- NflId <= 0.23
+|   |   |   |   |   |   |   |   |   |   |--- PlayerHeight <= 0.42
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 7
+|   |   |   |   |   |   |   |   |   |   |--- PlayerHeight >  0.42
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 10
+|   |   |   |   |   |   |   |   |   |--- NflId >  0.23
+|   |   |   |   |   |   |   |   |   |   |--- Distance <= 0.05
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 5
+|   |   |   |   |   |   |   |   |   |   |--- Distance >  0.05
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- VisitorScoreBeforePlay >  0.02
+|   |   |   |   |   |   |   |   |   |--- class: 13
+|   |   |   |   |   |   |   |--- GameClock >  -0.32
+|   |   |   |   |   |   |   |   |--- PlayerBirthDate <= 2.50
+|   |   |   |   |   |   |   |   |   |--- PlayerHeight <= 0.83
+|   |   |   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay <= -0.95
+|   |   |   |   |   |   |   |   |   |   |   |--- class: 20
+|   |   |   |   |   |   |   |   |   |   |--- HomeScoreBeforePlay >  -0.95
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- PlayerHeight >  0.83
+|   |   |   |   |   |   |   |   |   |   |--- PlayerHeight <= 2.27
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- PlayerHeight >  2.27
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- PlayerBirthDate >  2.50
+|   |   |   |   |   |   |   |   |   |--- class: 9
+|   |   |   |   |   |   |--- OffensePersonnel >  6.35
+|   |   |   |   |   |   |   |--- class: 5
+|   |   |   |   |   |--- HomeScoreBeforePlay >  0.74
+|   |   |   |   |   |   |--- class: 14
