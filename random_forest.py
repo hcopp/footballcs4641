@@ -19,7 +19,7 @@ test_labels = labels[24805:]['Yards']
 
 results = {}
 for tolerance in range(0,4):#0,4
-    for est in range(18,22):#0,101
+    for est in range(18,22):#90-110
         print('\nClassifying w/', est * 5, 'estimators')
         classifier = ensemble.RandomForestClassifier(n_estimators = est * 5)
         classifier.fit(train_data, train_labels)
