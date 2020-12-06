@@ -16,6 +16,9 @@ Daniel Mulloy, Steven McGaughey, William Hunnicutt, and Hunter Copp.
 [Pre-recorded video](assets/touch_point_3_video.mp4)
 
 # Final report (December 7)
+[Google Docs report](https://docs.google.com/document/d/1sj9cMP4cxt7Lhk_K9yiU8QvWSRu-IRRYhnXu_OPrwTw/edit?usp=sharing)
+[PDF report](assets/final_report.pdf)
+[Pre-recorded video](assets/final_video.mp4)
 For our project, we are trying to create a model that can predict the outcome of an NFL handoff on a given play. This would be able to help football analysts and coaches better decide what plays to run that give them the highest number of expected yards gained given the current situation.
 
 ## Dataset
