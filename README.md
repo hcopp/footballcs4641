@@ -31,7 +31,7 @@ Before we implemented any learning methods, we wanted to get a feel for the dist
 ![Figure 1](/assets/figure1.png)  
 *Figure 1 | Histogram consisting of each plays result*
 
-## Feature Selection
+## Unsupervised learning techniques
 Once we settled on the data set and were familiar with the distribution of yards, we then had to decide on what features to use. When choosing features, we wanted to choose the ones that had a direct correlation with yards gained. We also wanted to eliminate or combine features where it made sense. To give an example of why we would eliminate a feature, we are given “Stadium” and “Location” as 2 different features. The stadium never changes where it is located, so the location feature is unnecessary to use. To give an example of why we would combine a feature, we are given “TimeSnap”, which is the time when the ball was snapped, and “TimeHandoff”, which is the time the ball was handed to the running back. We can combine these two features to its own feature that shows the amount of time taken between the snap and the handoff. This reduces the number of features we would have to use. Lastly, we created a correlation matrix (Figure 2) to see the relationship between the features in each data point. Looking at the correlation matrix, we can see that no features have any significant correlation to the play’s yardage gain (by themselves at least).
 
 ![Figure 2](/assets/figure2.png)  
