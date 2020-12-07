@@ -5,7 +5,7 @@ import numpy as np
 import pandas as pd
 from pandas import DataFrame
 from pandas.core.series import Series
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler, MinMaxScaler
 
 
 def _column_to_ints(column: Series):
@@ -40,6 +40,10 @@ def _handle_column(column):
     unscaled = series.copy()
     scaler = StandardScaler()
     scaled = scaler.fit_transform(series.values.reshape(-1, 1)).flatten()
+    
+    other_scale = MinMaxScaler()
+    scaled = other_scale.fit_transform(scaled.reshape(-1, 1)).flatten()
+
     # print(scaled)
     series.update(scaled)
 
@@ -68,6 +72,7 @@ def main(file_name):
     print("Done Reading...")
     df = df[df['NflId'] == df['NflIdRusher']]
     df = df.reset_index(drop=True)
+    df = df.sample(frac=1).reset_index(drop=True)
     labels = df['Yards'].to_frame()
     bins = _thresholds(labels)
     bins.to_csv('./data/bins.csv')
