@@ -24,7 +24,7 @@ For our project, we are trying to create a model that can predict the outcome of
 The dataset came from Kaggle and includes data for each player on the field per play (682,154 total data points of run plays). Since there are 22 players on the field per play, this means we have 31,007 unique run plays in our data set. Our data also has 49 different features for each data point.  We decided to focus on run plays due to their decreased feature set (from 255 down to 49). The dataset includes features such as location, teams, down, and distance.
 
 ## Problem
-We wanted to create a model to predict the number of yards gained on a football play. The result of a play will fall between losing 100 yards and gaining 100 yards. Except in rare cases, a play will not lose more than 5 yards or gain more than 20. We initially saw this as a regression problem because the result was a number, but we determined it would be better to classify a range of yards gained.
+We wanted to create a model to predict the number of yards gained on a football play. While this wouldn’t be feasible to run in the moment to predict a play, it would be useful for football analysts and announcers to talk about the likelihood of a play’s success as it is about to start. The result of a play will fall between losing 100 yards and gaining 100 yards. Except in rare cases, a play will not lose more than 5 yards or gain more than 20. We initially saw this as a regression problem because the result was a number, but we determined it would be better to classify a range of yards gained.
 
 ## Data Cleaning
 
