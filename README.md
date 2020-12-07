@@ -1,6 +1,6 @@
 # CS 4641 Group 26
 Group Members:
-Daniel Mulloy, Steven McGaughey, William Hunnicutt, and Hunter Copp.
+Dan Mulloy, Cole McGaughey, Will Hunnicutt, and Hunter Copp.
 
 ## Touch-points
 ### Touch-point 1 (September 28)
@@ -18,13 +18,11 @@ Daniel Mulloy, Steven McGaughey, William Hunnicutt, and Hunter Copp.
 # Final report (December 7)
 [Google Docs report](https://docs.google.com/document/d/1sj9cMP4cxt7Lhk_K9yiU8QvWSRu-IRRYhnXu_OPrwTw/edit?usp=sharing) | [PDF report](assets/final_report.pdf) | [Pre-recorded video](assets/final_video.mp4)
 
-For our project, we are trying to create a model that can predict the outcome of an NFL handoff on a given play. This would be able to help football analysts and coaches better decide what plays to run that give them the highest number of expected yards gained given the current situation.
+## Problem
+For our project, we are trying to create a model that can predict the outcome of an NFL handoff on a given play. This would be able to help football analysts and coaches better decide what plays to run that give them the highest number of expected yards gained given the current situation. The result of a play will fall between losing 100 yards and gaining 100 yards. Except in rare cases, a play will not lose more than 5 yards or gain more than 20. We initially saw this as a regression problem because the result was a number, but we determined it would be better to classify a range of yards gained.
 
 ## Dataset
 The dataset came from Kaggle and includes data for each player on the field per play (682,154 total data points of run plays). Since there are 22 players on the field per play, this means we have 31,007 unique run plays in our data set. Our data also has 49 different features for each data point.  We decided to focus on run plays due to their decreased feature set (from 255 down to 49). The dataset includes features such as location, teams, down, and distance.
-
-## Problem
-We wanted to create a model to predict the number of yards gained on a football play. While this wouldn’t be feasible to run in the moment to predict a play, it would be useful for football analysts and announcers to talk about the likelihood of a play’s success as it is about to start. The result of a play will fall between losing 100 yards and gaining 100 yards. Except in rare cases, a play will not lose more than 5 yards or gain more than 20. We initially saw this as a regression problem because the result was a number, but we determined it would be better to classify a range of yards gained.
 
 ## Data Cleaning
 
