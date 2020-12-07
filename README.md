@@ -41,9 +41,6 @@ Once we had determined our updated feature set, we began cleaning the data. With
 
 After the data had been cleaned, we implemented PCA to find how many principal components the data had. The visualization for PCA is shown in Figure 3. When we ran PCA, we got that our data had 33 principal components that kept 99% variance. We then created a scree plot showing the proportion of variance for each principal component. The plot is shown in Figure 4. As you can see, the first 6 principal components have the highest proportion of variance, and then the graph starts to drop off. We would take these 6 principal components to be the most important in terms of affecting how many yards the play gained.
 
-![Figure 3](/assets/figure3.png)  
-*Figure 3 | PCA visualization of the dataset*
-
 ![Figure 4](/assets/figure4.png)  
 *Figure 4 | Scree plot*
 
